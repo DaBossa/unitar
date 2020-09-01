@@ -61,7 +61,11 @@
     </style>
 
 </head>
-
+<?php
+if(!isset($page_class)){
+    $page_class="";
+}
+?>
 <body class="<?php echo $body_class ?> bg-<?php echo $page_class ?>">
     <div id="loader" class="bg-<?php echo $page_class ?>">
         <?php include('assets/images/logo-unitar.svg'); ?>
