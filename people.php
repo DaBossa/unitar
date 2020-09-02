@@ -8,7 +8,6 @@ include('header.php');
 
 ?>
         <section class="hero-pilar bg-<?php echo $page_class ?>">
-            <img src="assets/images/pilar-hero-detalhe-1.svg" alt="" class="hero-pilar-detalhe-1">
             <div class="hero-pilar-image">
                 <div class="hero-icon-text">
                     <h1 class="bg-<?php echo $page_class ?>"><?php echo $titulo ?>
@@ -24,6 +23,7 @@ include('header.php');
                     <div class="col-10 col-md-6 offset-md-6 d-flex flex-column align-items-start justify-content-center">
                         <div class="pilar-hero-text pilar-hero-text-1 d-flex align-items-end">
                             <div class="inner font-size-3">
+								<img src="assets/images/pilar-hero-detalhe-1.svg" alt="" class="hero-pilar-detalhe-1">
                                 <p>Promote people's well-being and support equitable representation of countries in global decision-making fora</p>
                             </div>
                         </div>

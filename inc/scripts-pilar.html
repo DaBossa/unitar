@@ -22,20 +22,6 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(windo
         });
     });
 
-    gsap.from(".hero-pilar-detalhe-1", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        duration: 1,
-        delay: 0.8
-    });
-    gsap.from(".hero-pilar-detalhe-2", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        y: 100,
-        duration: 0.6,
-        delay: 1
-    });
-
     gsap.from(".image-mask", {
         scrollTrigger: ".hero-pilar",
         opacity: 0,
@@ -48,6 +34,19 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(windo
         x: '100%',
         scale: 1.5,
         duration: 1
+    });
+    gsap.from(".hero-pilar-detalhe-1", {
+        scrollTrigger: ".hero-pilar",
+        opacity: 0,
+        duration: 1,
+        delay: 1.2
+    });
+    gsap.from(".hero-pilar-detalhe-2", {
+        scrollTrigger: ".hero-pilar",
+        opacity: 0,
+        y: 100,
+        duration: 0.6,
+        delay: 1
     });
     gsap.from(".hero-icon-text h1", {
         scrollTrigger: ".hero-pilar",
@@ -407,7 +406,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(windo
         scrollTrigger: ".hero-pilar",
         opacity: 0,
         duration: 1,
-        delay: 0.8
+        delay: 1.2
     });
     gsap.from(".image-mask", {
         opacity: 0,
