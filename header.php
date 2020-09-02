@@ -12,18 +12,18 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#4D8CCA">
+    <meta name="theme-color" content="<?php echo $color ?>">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#4D8CCA">
+    <meta name="msapplication-navbutton-color" content="<?php echo $color ?>">
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#4D8CCA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="<?php echo $color ?>">
     <!-- /CHANGING ADDRESS AND NAVIGATION BARS' COLORS -->
     <?php if ($body_class == "index"): ?>
-    <title><?php echo $titulo ?></title>
+        <title><?php echo $titulo ?></title>
     <?php else: ?>
         <title><?php echo $titulo ?> | UNITAR</title>
     <?php endif; ?>
-    <meta name="description" content="Descrição">
+    <meta name="description" content="<?php echo $descricao ?>">
     <meta name="robots" content="index, follow">
 
     <link href="/favicon.ico" rel="shortcut icon" />
@@ -61,21 +61,18 @@
     </style>
 
 </head>
-<?php
-if(!isset($page_class)){
-    $page_class="";
-}
-?>
+<?php if(!isset($page_class)){ $page_class=""; } ?>
 <body class="<?php echo $body_class ?> bg-<?php echo $page_class ?>">
     <div id="loader" class="bg-<?php echo $page_class ?>">
         <?php include('assets/images/logo-unitar.svg'); ?>
     </div>
-    <header class="header-main bg-white sticky-top">
+    <header class="header-main bg-white">
         <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg w-100" id="header-navbar">
-                    <a class="navbar-brand" href="/"><img src="assets/images/logo-unitar.svg" alt="Unitar"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="row align-items-center">
+            <a class="navbar" href="/"><img src="assets/images/logo-unitar.svg" alt="Unitar"></a>
+                <nav class="navbar navbar-inverse bg-inverse navbar-expand-lg ml-auto" id="header-navbar">
+                    
+                    <button class="ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">

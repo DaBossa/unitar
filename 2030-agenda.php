@@ -1,4 +1,5 @@
 <?php
+$color = "#313D5E";
 $titulo = "Accelerating the 2030 Agenda";
 $descricao = "The UNITAR is a dedicated training arm of the United Nations system. UNITAR provides training and capacity development activities to assist mainly developing countries.";
 $body_class = "pilar";
@@ -39,7 +40,7 @@ include('header.php');
             <img src="assets/images/pilar-hero-detalhe-2.svg" alt="" class="hero-pilar-detalhe-2">
             <div class="container c-pb">
                 <div class="row">
-                    <div class="col-md-8 col-lg-5 col-xl-6 offset-xl-4">
+                    <div class="col-md-9 col-lg-5 col-xl-6 offset-md-2 offset-xl-4">
                         <div class="row">
                             <div class="pie-container">
                                 <svg id="pie" data-percentage="3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
@@ -55,13 +56,13 @@ include('header.php');
                             </div>
                             <div class="infos-container">
                                 <h4 data-percentage="3" class="cont">0</h4>
-                                <h3>of events beneficiaries</h3>
+                                <h3>of event beneficiaries</h3>
                                 <p>were associated with the </br><?php echo $titulo ?> Pillar activities.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center c-pt">
+                <div class="row justify-content-md-center align-items-center c-pt">
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-01@2x.png" alt="">
                     </div>
@@ -116,8 +117,15 @@ include('header.php');
                                 </li>
                             </ul>
                         </div>
-                        <p class="text-obs">*Certificates of completion and participation from learning events with objective assessment of learning requirements.
-                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 row mx-auto">
+                        <p class="text-obs col-md-6 ml-auto">*Certificates of completion and participation from learning events with objective assessment of learning requirements.</p>
                     </div>
                 </div>
             </div>
@@ -134,34 +142,34 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            <div class="container pt-5 mt-5 c-pb">
+            <div class="container pt-xl-5 mt-5 c-pb">
                 <div class="row flex-column align-items-center no-gutters pb-5">
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-01.svg" alt="">
                         <div class="content">
                             <p>UNITAR has contributed to better data for SDGs by training more than <strong>100 civil servants, including 9 Chief Statisticians, from 14 Asia-Pacific SIDS</strong>. 90 per cent of respondent countries have seen improvements to their national monitoring systems and SDG reporting. Additional <strong>130 persons</strong> benefited from <strong>statistics for SDGs training</strong> in other regions and at global level.</p>
                         </div>
                     </div>
-                    <div class="col-md-10 col-lg-9 col-xl-8 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-02.svg" alt="">
                         <div class="content">
                             <p>Strengthened statistical capacities of <strong>15 Small Island Developing States</strong>, most from Asia-Pacific region, in area of <strong>data governance, partnerships and monitoring SDG indicators</strong> by training more than <strong>100 senior governance officials</strong>, including 10 Chief Statisticians. 9 out of 10 SIDS having participated in the follow-up survey have reported a change in their national review and monitoring of SDGs related to their participation in this training program. 97% of survey respondents confirmed the overall useful of the workshops.</p>
                         </div>
                     </div>
-                    <div class="col-md-11 col-lg-10 col-xl-9 highlights-item">
+                    <div class="col-xl-9 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
                             <p>Launched the <strong>UNSDG:Learn</strong>, a new initiative, developed in partnership with the UN System Staff College and <strong>joined by more than 50 UN and non-UN partners</strong>, which provides a <strong>smart, online gateway to the wealth of learning offerings – courses and microlearning</strong> – to its users. The objective of the initiative is to reach millions of learners and enable them to identify learning most suited to their needs. Over the first 6 months of its existence the Platform has provided access to <strong>more than 220 products</strong>, including <strong>23 gender related</strong>, and attracted more than <strong>5’000 users from more than 170 countries</strong>.</p>
                         </div>
                     </div>
-                    <div class="col-md-10 col-lg-9 col-xl-8 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-04.svg" alt="">
                         <div class="content">
                             <p>Strengthened the skills related to <strong>stakeholder engagement, policy coherence and monitoring of SDGs</strong> of more than <strong>440 government officials</strong> through regional and national workshops. Most of the participants were from <strong>Small Island Developing States, Least Developed Countries and fragile states</strong>. Additional 400 plus benefited from facilitated online learning, learning courses or used learning resources.</p>
                         </div>
                     </div>
                     <div class="w-100"></div>
-                    <p class="text-right"><a href="" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                    <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=90" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                 </div>
             </div>
         </section>
@@ -183,7 +191,7 @@ include('header.php');
                     </div>
                     <div class="col-10 col-md-7 col-xl-6 offset-1 offset-md-0 text-desc font-size-3">
                         <p>“During the 1st workshop on the StaTact toolkit we proposed for the exercise a data analysis on domestic violence, based on a data collected 20 years ago. Afterwards, what started as an exercise became a real project when some stakeholders joined asking us to collect updated data on the subject and its impact on children. Now we have integrated this project into our demographic health survey and are finishing the data collection.”</p>
-                        <p class="text-right"><a href="" class="btn btn-light btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=95" class="btn btn-light btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>

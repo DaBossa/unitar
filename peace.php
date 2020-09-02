@@ -1,4 +1,5 @@
 <?php
+$color = "#63C3EF";
 $titulo = "Peace";
 $descricao = "The UNITAR is a dedicated training arm of the United Nations system. UNITAR provides training and capacity development activities to assist mainly developing countries.";
 $body_class = "pilar goto-color";
@@ -38,7 +39,7 @@ include('header.php');
             <img src="assets/images/pilar-hero-detalhe-2.svg" alt="" class="hero-pilar-detalhe-2">
             <div class="container c-pb">
                 <div class="row">
-                    <div class="col-md-8 col-lg-5 col-xl-6 offset-xl-4">
+                    <div class="col-md-9 col-lg-5 col-xl-6 offset-md-2 offset-xl-4">
                         <div class="row">
                             <div class="pie-container">
                                 <svg id="pie" data-percentage="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
@@ -54,18 +55,19 @@ include('header.php');
                             </div>
                             <div class="infos-container">
                                 <h4 data-percentage="11" class="cont">0</h4>
-                                <h3>of events beneficiaries</h3>
+                                <h3>of event beneficiaries</h3>
                                 <p>were associated with the </br><?php echo $titulo ?> Pillar activities.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center c-pt">
-                    <div class="activity-item">
-                        <img src="assets/images/pilar-icon-05@2x.png" alt="">
-                    </div>
+                <div class="row justify-content-md-center align-items-center c-pt">
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-04@2x.png" alt="">
+                        
+                    </div>
+                    <div class="activity-item">
+                    <img src="assets/images/pilar-icon-05@2x.png" alt="">
                     </div>
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-07@2x.png" alt="">
@@ -76,8 +78,8 @@ include('header.php');
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-17@2x.png" alt="">
                     </div>
-                    <div class="activity-text col-lg-5 col-xl-4 p-0 m-4">
-                        <p>Pillar programming was primarily aligned with ten of the SDGs, with many teams working in a cross-cutting capacity supporting multiple goals and targets.</p>
+                    <div class="activity-text col-lg-7 col-xl-4 p-0 m-2 m-md-4">
+                        <p>Peace Pillar programming was primarily aligned with ten of the SDGs, with many teams working in a cross-cutting capacity supporting multiple goals and targets.</p>
                     </div>
                 </div>
             </div>
@@ -121,17 +123,24 @@ include('header.php');
                                 </li>
                             </ul>
                         </div>
-                        <p class="text-obs">*Certificates of completion and participation from learning events with objective assessment of learning requirements.
-                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container c-pt mt-5 mb-n5">
+            <div class="container">
                 <div class="row">
-                    <div class="anima-type1 col-lg-7 mx-auto font-size-2">
-                        <p><strong>The ever-growing relationship between UNITAR, the African Union (AU) and other regional organizations is particularly noteworth y.</strong></p>
+                    <div class="col-xl-9 row mx-auto">
+                        <p class="text-obs col-md-6 ml-auto">*Certificates of completion and participation from learning events with objective assessment of learning requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mt-5 mb-5 mb-lg-n5">
+                <div class="row">
+                    <div class="anima-type1 col-11 col-md-9 col-lg-7 mx-auto font-size-2">
+                        <p><strong>The ever-growing relationship between UNITAR, the African Union (AU) and other regional organizations is particularly noteworthy.</strong></p>
                     </div>
                 </div>
             </div>
@@ -148,22 +157,22 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            <div class="container pt-5 mt-5 c-pb">
+            <div class="container pt-xl-5 mt-5 c-pb">
                 <div class="row flex-column align-items-center no-gutters">
-                    <div class="col-md-10 col-lg-9 col-xl-8 anima-type1 mb-5 pb-5">
+                    <div class="col-xl-8 anima-type1 mb-5 pb-5">
                         <div class="content">
                             <p>High-level engagement with Member States, regional organizations and other United Nations agencies was strengthened through the planning and facilitation of two high-level events. The first event the Seminar for Special and Personal Representatives and Envoys of the UN Secretary-General is now in its 16th year. The second event, the International Conference on Peace and Investments in the Democratic Republic of the Congo and the Great Lakes Region, brought together diverse technical and financial partners to present recent security improvements in the region as well as to showcase new investment opportunities.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row flex-column align-items-center no-gutters pb-5">
-                    <div class="col-md-10 col-lg-9 col-xl-8 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-01.svg" alt="">
                         <div class="content">
                             <p>Strengthened the <strong>peacemaking and conflict prevention</strong> capacities of <strong>68 senior and mid-level female and male</strong> diplomats from African Member States, representatives from Offices of Presidents and Prime Ministers, regional and sub-regional organization officials, and staff of UN and AU peace missions on the continent, and <strong>38 senior and mid-level</strong> diplomats, regional organization and UN Headquarters and peace mission staff from around the world through the conduct of one international <strong>Fellowship Programme</strong> and two intensive <strong>Regional Training Programmes Africa</strong>.</p>
                         </div>
                     </div>
-                    <div class="col-md-10 col-lg-9 col-xl-8 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-02.svg" alt="">
                         <div class="content">
                             <p>Deepened the knowledge and strengthened the skills of <strong>29 female and male Indigenous Peoples’ representatives</strong> from around the world in <strong>the 12th international training programme in conflict prevention, negotiation and reconciliation</strong> to enhance the contribution of Indigenous representatives to peaceful, just and inclusive societies.</p>
@@ -178,62 +187,62 @@ include('header.php');
                             <?php include('assets/images/section-wave-4.svg'); ?>
                         </div>
                     </div>
-                    <div class="col-md-10 col-lg-9 col-xl-8 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
                             <p><strong>Trained 6,123 soldiers</strong> from 8 African Troop Contributing Countries prior to their deployment to UN peace operations in collaboration with the Global Peace Operations Initiative (GPOI). In addition, in collaboration with UNDP, <strong>28 civilians from the League of Arab States (LAS)</strong> specialized Task Force were trained in preparation for their eventual deployment to joint peace operations in the MENA region. Finally, <strong>23 correction personnel</strong> were trained as part of the institutional capacity-building support for the security sector.</p>
                         </div>
                     </div>
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-04.svg" alt="">
                         <div class="content">
-                            <p><strong>Trained 78 Formed Police Units (FPUs) trainers</strong>, including 12 female trainers from West Africa, in collaboration with the Ecole de Maintien de la Paix “Alioune Blondin Beye” (EMP). In addition, <strong>254 members of FPUs</strong> were trained prior to their deployment to the United Nations Multidimensional Integrated Stabilization Mission in Mali (MINUSMA), as well as <strong>25 Individual Police Officers (IPOs)</strong>.</p>
+                            <p><a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/pre-deployment-support-military-police-corrections-and-civilians" target="_blank">Trained 78 Formed Police Units (FPUs) trainers</a>, including 12 female trainers from West Africa, in collaboration with the Ecole de Maintien de la Paix “Alioune Blondin Beye” (EMP). In addition, <strong>254 members of FPUs</strong> were trained prior to their deployment to the United Nations Multidimensional Integrated Stabilization Mission in Mali (MINUSMA), as well as <strong>25 Individual Police Officers (IPOs)</strong>.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-05.svg" alt="">
                         <div class="content">
-                            <p><strong>Strengthened the partnership with the Network of African Women in Conflict Prevention and Mediation (FemWise-Africa)</strong>. Delivered a five-day induction training for <strong>35</strong> newly accredited members of the network.</p>
+                            <p><a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/gender-equality-and-womens-empowerment/custodians-peace-empowering-femwise-africa-members-ambassadors-peace-and-security">Strengthened the partnership with the Network of African Women in Conflict Prevention and Mediation (FemWise-Africa)</a>. Delivered a five-day induction training for <strong>35</strong> newly accredited members of the network.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-8 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-06.svg" alt="">
                         <div class="content">
-                            <p>Strengthened knowledge and skills of <strong>271 teachers, educators, psychologists, social workers, and young people involved in the reconciliation process in Colombia</strong>, leading to multiplication across communities and reaching many more families, students, children and youth on implementation of strategies that foster resilience and conflict prevention capacities in local communities.</p>
+                            <p>Strengthened knowledge and skills of <strong>271 teachers, educators, psychologists, social workers, and <a href="https://www.unitar.org/youth-led-peace-and-reconciliation-colombia-transformational-approach-0" target="_blank">young people involved in the reconciliation process in Colombia</a></strong>, leading to multiplication across communities and reaching many more families, students, children and youth on implementation of strategies that foster resilience and conflict prevention capacities in local communities.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-07.svg" alt="">
                         <div class="content">
-                            <p>Built the capacity of and promoted rule of law and <strong>good governance among 166 members and staff of the Kenyan Parliament</strong> in partnership with the Kenyan Centre for Parliamentary Studies and Training (CPST), the capacity-building arm of the Kenyan Parliament.</p>
+                            <p>Built the capacity of and promoted rule of law and <a href="https://www.unitar.org/about/news-stories/news/sustainable-legislation-how-good-governance-kenya-reaches-furthest-first" target="_blank">good governance among 166 members and staff of the Kenyan Parliament</a> in partnership with the Kenyan Centre for Parliamentary Studies and Training (CPST), the capacity-building arm of the Kenyan Parliament.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-08.svg" alt="">
                         <div class="content">
                             <p>Contributed to <strong>expanding the knowledge</strong> and understanding of <strong>5,965 adult learners</strong>, including <strong>646 UN volunteers</strong>, on key concepts related to <strong>conflict and postconflict theory and practice through online learning</strong>.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-9 highlights-item">
+                    <div class="col-xl-9 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-09.svg" alt="">
                         <div class="content">
-                            <p>Built the knowledge and capacities of <strong>22 junior DDR practitioners</strong> (in partnership with the Folke Bernadotte Academy (FBA)) through the delivery of an <strong>online course on the UN approach to Disarmament, Demobilization and Reintegration (DDR)</strong>, as well as the capacities of 17 DDR practitioners (in partnership with UN DPO and UNODA) to design effective, <strong>tailored arms and ammunition management</strong> operations – in both traditional and ‘second generation’ DDR settings – in line with the most relevant, globally accepted standards (IDDRS, ISACS and IATG) and with international and regional commitments of host governments.</p>
+                            <p>Built the knowledge and capacities of <strong>22 junior DDR practitioners</strong> (in partnership with the Folke Bernadotte Academy (FBA)) through the delivery of an <strong>online course on the UN approach to <a href="https://www.unitar.org/about/news-stories/news/unitar-co-hosted-first-humanitarian-energy-conference">Disarmament, Demobilization and Reintegration (DDR)</a></strong>, as well as the capacities of 17 DDR practitioners (in partnership with UN DPO and UNODA) to design effective, <strong>tailored arms and ammunition management</strong> operations – in both traditional and ‘second generation’ DDR settings – in line with the most relevant, globally accepted standards (IDDRS, ISACS and IATG) and with international and regional commitments of host governments.</p>
                         </div>
                     </div>
-                    <div class="col-md-10 col-lg-9 col-xl-8 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-10.svg" alt="">
                         <div class="content">
                             <p>Worked on building and <strong>developing capacities for early warning</strong>. Conducted a training on Conflict Analysis and Early Warning together with the African Union and in cooperation with UNITAR UNOSAT to improve the capacities of AU member <strong>states to contribute to the AU Continental Early Warning System</strong>. Further, <strong>provided technical advice to the G5 Sahel Regional Cell for the Prevention of Radicalization and Violent Extremism (CELLRAD)</strong> to develop the capacities of <strong>early warning systems in a violent extremism and terrorism context</strong>.</p>
                         </div>
                     </div>
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-11.svg" alt="">
                         <div class="content">
-                            <p>Convened the <strong>Humanitarian Energy Conference</strong>, bringing together <strong>161 members from UN agencies, donors, civil society groups and the private sector</strong> to discuss strengthening humanitarian capacities to respond with more reliable, sustainable, modern and affordable energy.</p>
+                            <p>Convened the <a href="https://www.unitar.org/about/news-stories/news/unitar-co-hosted-first-humanitarian-energy-conference" target="_blank">Humanitarian Energy Conference</a>, bringing together <strong>161 members from UN agencies, donors, civil society groups and the private sector</strong> to discuss strengthening humanitarian capacities to respond with more reliable, sustainable, modern and affordable energy.</p>
                         </div>
                     </div>
                     <div class="w-100"></div>
-                    <p class="text-right"><a href="" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                    <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=20" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                 </div>
             </div>
         </section>
@@ -255,7 +264,7 @@ include('header.php');
                     </div>
                     <div class="col-10 col-md-7 col-xl-6 offset-1 offset-md-0 text-desc font-size-3">
                         <p>“This knowledge and experience helped me greatly in my daily work to accomplish a good deal, especially when being a part of setting up and strengthening Indigenous women’s networks and Indigenous youth platforms at Asia level, national level and community level which includes a lot of facilitating for people with different backgrounds and interests.”</p>
-                        <p class="text-right"><a href="" class="btn btn-light btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=27" class="btn btn-light btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>
@@ -278,7 +287,7 @@ include('header.php');
                     </div>
                     <div class="col-10 col-md-7 col-xl-6 offset-md-0 text-desc font-size-3">
                         <p>“It’s rather easy to get reading materials on peacekeeping, but to practice what we learn, be in the field and see how the work is actually done on a daily basis was the experience we needed to fill the gaps in the theoretical studies.”</p>
-                        <p class="text-right"><a href="" class="btn btn-color btn-peace btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=33" class="btn btn-color btn-<?php echo $page_class ?> btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>

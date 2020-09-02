@@ -6,6 +6,7 @@
                 <div class="col-auto text-white anima-type1 mt-n5">
                     <a href="https://www.unitar.org/" class="font-size-3 a-underline mt-5 d-block">Back to main UNITAR website</a>
                 </div>
+                <div class="w-100 mt-4 d-md-none"></div>
                 <div class="col-auto anima-type1 mt-3">
                     <a href="/download/unitar_results_report_2019.pdf" class="btn btn-lg btn-withe mt-n3 d-block" target="_blank">Download <i><svg xmlns="http://www.w3.org/2000/svg" width="42.282" height="26.641" viewBox="0 0 42.282 26.641"><g transform="translate(-1202.805 -684.714)"><path d="M1241.41,697.72v9.957h-34.928V697.72H1202.8v13.634h42.282V697.72Z" fill="#4d8cca"/><path d="M1222.566,702.436a.9.9,0,0,0,.123.123c.015,0,.03.015.046.03.046.031.076.062.122.092a.238.238,0,0,0,.062.046c.03.016.061.046.092.062a.126.126,0,0,1,.061.03l.092.046c.015.015.046.015.061.031.031.015.077.03.107.046.016,0,.046.015.061.015.047.015.077.015.123.031.015,0,.046.015.061.015a.29.29,0,0,0,.123.031c.015,0,.031.015.046.015.062,0,.124.037.185.037s.122-.031.183-.031c.016,0,.031-.031.046-.031a.366.366,0,0,0,.123-.015c.015,0,.046-.015.061-.015a.366.366,0,0,1,.107-.031c.016,0,.047-.015.062-.015.03-.016.076-.031.107-.046.015-.016.046-.016.061-.031l.092-.046a.113.113,0,0,0,.062-.03.568.568,0,0,0,.091-.062c.016-.015.046-.03.062-.046.046-.03.076-.061.122-.092.016-.015.031-.03.046-.046a.875.875,0,0,0,.123-.127l4.412-4.9a1.833,1.833,0,0,0-2.727-2.451l-1.241,1.378.015-9.866a1.838,1.838,0,1,0-3.676.015l-.016,9.743-1.133-1.271-.012-.013a1.824,1.824,0,0,0-2.577-.141h0a1.86,1.86,0,0,0-.138,2.62Z" fill="#4d8cca"/></g></svg></i></a>
                 </div>
@@ -14,11 +15,11 @@
     </section>
     <footer class="bg-white">
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row align-items-end justify-content-md-between">
                 <div class="col-auto">
                     <a class="navbar-brand" href="/"><img src="assets/images/logo-unitar.svg" alt="Unitar"></a>
                 </div>
-                <div class="col-auto">
+                <div class="col-auto mt-5 mt-md-0">
                     <ul class="nav nav-social">
                         <li><a href="https://www.facebook.com/UNITARHQ" target="_blank"><i><svg xmlns="http://www.w3.org/2000/svg" width="47.446" height="47.446" viewBox="0 0 47.446 47.446"><path d="M0,0A23.723,23.723,0,0,0,0,47.446,23.75,23.75,0,0,0,23.723,23.723,23.75,23.75,0,0,0,0,0M6.581,14.072a.358.358,0,0,1-.359.358H3.369A1.268,1.268,0,0,0,2.1,15.7v2.987H6.16a.357.357,0,0,1,.356.388l-.356,4.21a.357.357,0,0,1-.357.328H2.1V37.585a.359.359,0,0,1-.358.358H-3.362a.358.358,0,0,1-.358-.358V23.611H-6.273a.358.358,0,0,1-.358-.358v-4.21a.358.358,0,0,1,.358-.358H-3.72V14.626A5.122,5.122,0,0,1,1.4,9.5h4.82a.358.358,0,0,1,.359.358Z" transform="translate(23.723)" fill="#3e92cf"/></svg></i></a></li>
                         <li><a href="https://twitter.com/UNITAR" target="_blank"><i><svg xmlns="http://www.w3.org/2000/svg" width="47.446" height="47.446" viewBox="0 0 47.446 47.446"><path d="M0,0A23.723,23.723,0,0,0,0,47.446,23.75,23.75,0,0,0,23.723,23.723,23.75,23.75,0,0,0,0,0M14.607,15.09a.668.668,0,0,1-.136.44,10.943,10.943,0,0,1-2.2,2.3c-.126.095-.337.194-.337.372,0,4.57-1.168,9.133-4.5,12.443-4.242,4.213-10.6,5.36-16.253,3.8a15.546,15.546,0,0,1-3.143-1.257c-.333-.182-.659-.369-.98-.581-.081-.066-.141-.126-.072-.169s.122-.037.374,0a11.072,11.072,0,0,0,4.7-.6c.822-.287,2.587-.865,3.1-1.641.011-.018.024-.018.036-.036-.206-.048-.412-.048-.617-.084a6.071,6.071,0,0,1-4.534-3.8c-.06-.151,0-.229.158-.2a6.5,6.5,0,0,0,2.158-.067,3.441,3.441,0,0,1-.732-.223,5.849,5.849,0,0,1-3.6-4.661,3.57,3.57,0,0,1-.036-.653c.012-.151.079-.2.212-.115a5.834,5.834,0,0,0,2.2.617c-.248-.193-.477-.4-.7-.617-1.676-1.588-2.327-4.819-.985-6.83.109-.164.181-.164.314-.012,3.066,3.494,6.844,5.125,11.4,5.8.121.018.132,0,.114-.133a6.127,6.127,0,0,1,.06-2.383,5.788,5.788,0,0,1,1.127-2.256,6.02,6.02,0,0,1,1.886-1.541,5.9,5.9,0,0,1,2.339-.661,5.6,5.6,0,0,1,2.465.4,5.871,5.871,0,0,1,1.607.985,2.716,2.716,0,0,1,.29.3.222.222,0,0,0,.229.061,14.242,14.242,0,0,0,3.317-1.269.159.159,0,0,1,.149-.013c.048.037.029.1.006.146a5.14,5.14,0,0,1-.931,1.693c-.265.33-.928,1.145-1.378,1.22a11.365,11.365,0,0,0,2.793-.8c.112-.051.1-.073.1,0Z" transform="translate(23.723)" fill="#3e92cf"/></svg></i></a></li>
@@ -32,11 +33,11 @@
     </footer>
 
     <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="/assets/js/gsap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/ScrollTrigger.min.js"></script>
 
     <script type="text/javascript" src="/assets/js/scripts.js"></script>
 </body>

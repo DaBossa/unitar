@@ -1,4 +1,5 @@
 <?php
+$color = "#7771B1";
 $titulo = "People";
 $descricao = "The UNITAR is a dedicated training arm of the United Nations system. UNITAR provides training and capacity development activities to assist mainly developing countries.";
 $body_class = "pilar";
@@ -39,7 +40,7 @@ include('header.php');
             <img src="assets/images/pilar-hero-detalhe-2.svg" alt="" class="hero-pilar-detalhe-2">
             <div class="container c-pb">
                 <div class="row">
-                    <div class="col-md-8 col-lg-5 col-xl-6 offset-xl-4">
+                    <div class="col-md-9 col-lg-5 col-xl-6 offset-md-2 offset-xl-4">
                         <div class="row">
                             <div class="pie-container">
                                 <svg id="pie" data-percentage="27" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
@@ -55,13 +56,13 @@ include('header.php');
                             </div>
                             <div class="infos-container">
                                 <h4 data-percentage="27" class="cont">0</h4>
-                                <h3>of events beneficiaries</h3>
+                                <h3>of event beneficiaries</h3>
                                 <p>were associated with the </br><?php echo $titulo ?> Pillar activities.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center c-pt">
+                <div class="row justify-content-md-center align-items-center c-pt">
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-02@2x.png" alt="">
                     </div>
@@ -70,6 +71,15 @@ include('header.php');
                     </div>
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-04@2x.png" alt="">
+                    </div>
+                    <div class="activity-item">
+                        <img src="assets/images/pilar-icon-05@2x.png" alt="">
+                    </div>
+                    <div class="activity-item">
+                        <img src="assets/images/pilar-icon-08@2x.png" alt="">
+                    </div>
+                    <div class="activity-item">
+                        <img src="assets/images/pilar-icon-10@2x.png" alt="">
                     </div>
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-11@2x.png" alt="">
@@ -83,18 +93,9 @@ include('header.php');
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-17@2x.png" alt="">
                     </div>
-                    <div class="activity-item">
-                        <img src="assets/images/pilar-icon-05@2x.png" alt="">
-                    </div>
-                    <div class="activity-item">
-                        <img src="assets/images/pilar-icon-08@2x.png" alt="">
-                    </div>
-                    <div class="activity-item">
-                        <img src="assets/images/pilar-icon-10@2x.png" alt="">
-                    </div>
-                    <div class="activity-text col-lg-7 col-xl-6 p-0 m-4">
+                    <!--<div class="activity-text col-lg-7 col-xl-6 p-0 m-4">
                         <p>Pillar programming was primarily aligned with ten of the SDGs, with many teams working in a cross-cutting capacity supporting multiple goals and targets.</p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section>
@@ -137,8 +138,15 @@ include('header.php');
                                 </li>
                             </ul>
                         </div>
-                        <p class="text-obs">*Certificates of completion and participation from learning events with objective assessment of learning requirements.
-                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 row mx-auto">
+                        <p class="text-obs col-md-6 ml-auto">*Certificates of completion and participation from learning events with objective assessment of learning requirements.</p>
                     </div>
                 </div>
             </div>
@@ -155,46 +163,46 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            <div class="container pt-5 mt-5 c-pb">
+            <div class="container pt-xl-5 mt-5 c-pb">
                 <div class="row flex-column align-items-center no-gutters pb-5">
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-01.svg" alt="">
                         <div class="content">
                             <p>UNITAR’s network of affiliated <strong>CIFAL centres</strong> provided training and learning opportunities to <strong>34,862 government</strong> officials, private sector representatives, and civil society leaders from 70 countries around the world.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-02.svg" alt="">
                         <div class="content">
                             <p>Strengthened the managerial and leadership capacity of <strong>3,595 government officials and key stakeholders</strong> to develop and implement interventions that address risk factors associated to <strong>road traffic</strong> crashes.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
                             <p><strong>Reached 98 surgical staff and stakeholders</strong> with a <strong>new mobile application on the WHO Surgical Safety Checklist</strong> developed to facilitate its use in all surgical settings and to increase the safety of patients undergoing surgical procedures.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-04.svg" alt="">
                         <div class="content">
                             <p>Equipped <strong>402 individuals</strong> including public officials, civil society and NGO members to identify <strong>local solutions to global water challenges</strong>.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-05.svg" alt="">
                         <div class="content">
                             <p>Raised awareness of <strong>199 youth and key stakeholders</strong> on the role of young people in sustainable development, both as a vulnerable part of society and as active agents, through the <strong>1M2030 Youth Leadership conference in Geneva.</strong></p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-06.svg" alt="">
                         <div class="content">
                             <p>Empowered <strong>182 public officials and private sector executives</strong> with transformational ideas for shaping public policy and with collaborative strategies in implementing policy through the <strong>Leadership in the Public Sector learning course</strong>, the annual <strong>Collaborative Leadership Workshop</strong> and through the </strong>9th annual Geneva Institute for Leadership and Public Policy Conference</strong>.</p>
                         </div>
                     </div>
                     <div class="w-100"></div>
-                    <p class="text-right"><a href="" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                    <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=40" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                 </div>
             </div>
         </section>
@@ -216,7 +224,7 @@ include('header.php');
                     </div>
                     <div class="col-10 col-md-7 col-xl-6 offset-1 offset-md-0 text-desc font-size-3">
                         <p>“The conference provided me with the opportunity to engage in intergenerational dialogue with an international community. I came to understand the intersectionality of the Sustainable Development Goals that we, as youth, inherit and as social entrepreneurs develop.”</p>
-                        <p class="text-right"><a href="" class="btn btn-light btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=43" class="btn btn-light btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 <?php
+$color = "#219E44";
 $titulo = "Planet";
 $descricao = "The UNITAR is a dedicated training arm of the United Nations system. UNITAR provides training and capacity development activities to assist mainly developing countries.";
 $body_class = "pilar goto-color";
@@ -40,7 +41,7 @@ include('header.php');
             <img src="assets/images/pilar-hero-detalhe-2.svg" alt="" class="hero-pilar-detalhe-2">
             <div class="container c-pb">
                 <div class="row">
-                    <div class="col-md-8 col-lg-5 col-xl-6 offset-xl-4">
+                    <div class="col-md-9 col-lg-5 col-xl-6 offset-md-2 offset-xl-4">
                         <div class="row">
                             <div class="pie-container">
                                 <svg id="pie" data-percentage="54" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
@@ -56,13 +57,13 @@ include('header.php');
                             </div>
                             <div class="infos-container">
                                 <h4 data-percentage="54" class="cont">0</h4>
-                                <h3>of events beneficiaries</h3>
+                                <h3>of event beneficiaries</h3>
                                 <p>were associated with the </br><?php echo $titulo ?> Pillar activities.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center c-pt">
+                <div class="row justify-content-md-center align-items-center c-pt">
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-04@2x.png" alt="">
                     </div>
@@ -123,8 +124,15 @@ include('header.php');
                                 </li>
                             </ul>
                         </div>
-                        <p class="text-obs">*Certificates of completion and participation from learning events with objective assessment of learning requirements.
-                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 row mx-auto">
+                        <p class="text-obs col-md-6 ml-auto">*Certificates of completion and participation from learning events with objective assessment of learning requirements.</p>
                     </div>
                 </div>
             </div>
@@ -141,46 +149,46 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            <div class="container pt-5 mt-5 c-pb">
+            <div class="container pt-xl-5 mt-5 c-pb">
                 <div class="row flex-column align-items-center no-gutters pb-5">
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-01.svg" alt="">
                         <div class="content">
                             <p>Developed climate change related knowledge and skills of over <strong>30,000 stakeholders</strong> through the UNITARmanaged UN CC:e-Learn platform, which has more <strong>than 230,000 registrations and 21 courses in 8 languages</strong>.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-02.svg" alt="">
                         <div class="content">
                             <p>Helped to establish the <strong>EduCCate Global</strong> programme strengthening <strong>the climate literacy of thousands of primary and secondary teachers</strong> and providing them with the tools to bring climate change and sustainability into the classroom.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
                             <p>Supported the development / upgrading process of <strong>national climate change learning strategies</strong> in Kenya, the Kyrgyz Republic, Malawi Zambia and Zimbabwe.</p>
                         </div>
                     </div>
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-04.svg" alt="">
                         <div class="content">
                             <p>In partnership with the United Nations University initiated the transfer of its <strong>Sustainable Cycles Programme</strong>, which focuses on research and training in the area of <strong>e-waste and circularity</strong>, to UNITAR’s Division for Planet. This process is to be completed by end 2021.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-05.svg" alt="">
                         <div class="content">
                             <p>Trained more than <strong>100 national stakeholders in Angola</strong> on <strong>Chemicals and Waste Management</strong> and the development of <strong>National Coordination Committees</strong> and sectorial coordination and consultation.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-06.svg" alt="">
                         <div class="content">
                             <p>Undertook supporting visits to <strong>Sierra Leone</strong> and the <strong>Democratic Republic of Congo</strong> to finalize their <strong>National Action Plans for the artisanal and small-scale gold mining sector (ASGM)</strong>.</p>
                         </div>
                     </div>
                     <div class="w-100"></div>
-                    <p class="text-right"><a href="" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                    <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=48" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                 </div>
             </div>
         </section>
@@ -203,7 +211,7 @@ include('header.php');
                     </div>
                     <div class="col-10 col-md-7 col-xl-6 offset-1 offset-md-0 text-desc font-size-3">
                         <p>“During the workshop, we learned the principles and methods for creating online courses and we had the chance to experiment, applying the different steps in the process of developing an effective e-learning pilot product.”</p>
-                        <p class="text-right"><a href="" class="btn btn-light btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=53" class="btn btn-light btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>
@@ -226,7 +234,7 @@ include('header.php');
                     </div>
                     <div class="col-10 col-md-7 col-xl-6 offset-md-0 text-desc font-size-3">
                         <p>“Together we organized a Training of Trainer (ToT) workshop to better prepare those involved in the data collection and we established 4 national steering groups with institutions, non-governmental organizations and every stakeholder and mercury user in the country to get them on board with our project.”</p>
-                        <p class="text-right"><a href="" class="btn btn-color btn-<?php echo $page_class ?> btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=57" class="btn btn-color btn-<?php echo $page_class ?> btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>

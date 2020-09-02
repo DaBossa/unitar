@@ -1,4 +1,5 @@
 <?php
+$color = "#D53216";
 $page = "pillars";
 $titulo = "Satellite Analysis and Applied Research";
 $descricao = "The UNITAR is a dedicated training arm of the United Nations system. UNITAR provides training and capacity development activities to assist mainly developing countries.";
@@ -40,7 +41,7 @@ include('header.php');
             <img src="assets/images/pilar-hero-detalhe-2.svg" alt="" class="hero-pilar-detalhe-2">
             <div class="container c-pb">
                 <div class="row">
-                    <div class="col-md-8 col-lg-5 col-xl-6 offset-xl-4">
+                    <div class="col-md-9 col-lg-5 col-xl-6 offset-md-2 offset-xl-4">
                         <div class="row">
                             <div class="pie-container">
                                 <svg id="pie" data-percentage="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
@@ -56,13 +57,13 @@ include('header.php');
                             </div>
                             <div class="infos-container">
                                 <h4 data-percentage="1" class="cont">0</h4>
-                                <h3>of events beneficiaries</h3>
+                                <h3>of event beneficiaries</h3>
                                 <p>were associated with the <?php echo $titulo ?> Pillar activities.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center c-pt">
+                <div class="row justify-content-md-center align-items-center c-pt">
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-05@2x.png" alt="">
                     </div>
@@ -123,8 +124,15 @@ include('header.php');
                                 </li>
                             </ul>
                         </div>
-                        <p class="text-obs">*Certificates of completion and participation from learning events with objective assessment of learning requirements.
-                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 row mx-auto">
+                        <p class="text-obs col-md-6 ml-auto">*Certificates of completion and participation from learning events with objective assessment of learning requirements.</p>
                     </div>
                 </div>
             </div>
@@ -141,46 +149,46 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            <div class="container pt-5 mt-5 c-pb">
+            <div class="container pt-xl-5 mt-5 c-pb">
                 <div class="row flex-column align-items-center no-gutters pb-5">
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-01.svg" alt="">
                         <div class="content">
                             <p>Raised awareness and built the capacity of 361 stakeholders in Fiji, Vanuatu and the Solomon Islands on the benefits of <strong>Geospatial Information Technology (GIT) and satellite remote sensing for decision-making on DRR and climate change adaptation</strong>, as part of the UK Space Agency (UKSA)-funded CommonSensing project.</p>
                         </div>
                     </div>
-                    <div class="col-md-10 col-lg-9 col-xl-8 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-02.svg" alt="">
                         <div class="content">
                             <p>In partnership with the West African Science Service Centre on Climate Change and Adapted Land Use (WASCAL), UNOSAT supported the Economic Community of West African States (ECOWAS) member states by enhancing the capacities of <strong>46 training beneficiaries on Disaster Risk Reduction and Management (DRR/M)</strong>, including Flood Forecasting and Early Warning Systems, to understand and use hydrological modelling tools, conduct flood forecasts and leverage geospatial information technology.</p>
                         </div>
                     </div>
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
                             <p>Produced <strong>282 geo-spatial products</strong>, including <strong>maps, reports, statistics and data</strong> to respond to requests from the <strong>international humanitarian community</strong>, including Member States, UN agencies, international and regional organizations, NGOs and other humanitarian stakeholders.</p>
                         </div>
                     </div>
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-04.svg" alt="">
                         <div class="content">
                             <p>Developed an <strong>Artificial Intelligence model</strong> enabling <strong>flood mapping to be completed in a fraction of the time normally needed</strong>. This entailed the development of an algorithm and operational workflow for Machine Learning and satellite imagery-based flood analysis, as well as the creation of a flood training data repository.</p>
                         </div>
                     </div>
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-05.svg" alt="">
                         <div class="content">
                             <p>Shared more than <strong>100 maps and reports featuring analyses of hundreds of different locations in Syria</strong>, with a focus on Damascus, Idlib, Aleppo and Hama, for the <strong>Office of the Special Envoy of the Secretary-General for Syria (OSE)</strong>. Each report features analysis results of more than 200 km2 of satellite imagery on average.</p>
                         </div>
                     </div>
-                    <div class="col-md-9 col-lg-8 col-xl-7 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-06.svg" alt="">
                         <div class="content">
                             <p>In collaboration with the United Nations Economic and Social Commission for Asia and the Pacific (ESCAP), UNOSAT strengthened capacities of <strong>48 young female professionals</strong> to use GIT applications – specifically <strong>geospatial cloud analytics</strong> – to reduce disaster risk and enhance resilience.</p>
                         </div>
                     </div>
                     <div class="w-100"></div>
-                    <p class="text-right"><a href="" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                    <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=100" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                 </div>
             </div>
         </section>
@@ -202,7 +210,7 @@ include('header.php');
                     </div>
                     <div class="col-10 col-md-7 col-xl-6 offset-1 offset-md-0 text-desc font-size-3">
                         <p>“Although I knew a bit on <br>the topic before, it was <br>the first time I applied it to <br>disaster risk reduction.”</p>
-                        <p class="text-right"><a href="" class="btn btn-light btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=103" class="btn btn-light btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>

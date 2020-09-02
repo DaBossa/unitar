@@ -1,10 +1,10 @@
 <?php
+$color = "#F09300";
 $titulo = "Prosperity";
 $descricao = "The UNITAR is a dedicated training arm of the United Nations system. UNITAR provides training and capacity development activities to assist mainly developing countries.";
-$body_class = "pilar";
+$body_class = "pilar goto-color";
 $page_class = "prosperity";
 include('header.php');
-
 ?>
         <section class="hero-pilar bg-<?php echo $page_class ?>">
             <img src="assets/images/pilar-hero-detalhe-1.svg" alt="" class="hero-pilar-detalhe-1">
@@ -39,7 +39,7 @@ include('header.php');
             <img src="assets/images/pilar-hero-detalhe-2.svg" alt="" class="hero-pilar-detalhe-2">
             <div class="container c-pb">
                 <div class="row">
-                    <div class="col-md-8 col-lg-5 col-xl-6 offset-xl-4">
+                    <div class="col-md-9 col-lg-5 col-xl-6 offset-md-2 offset-xl-4">
                         <div class="row">
                             <div class="pie-container">
                                 <svg id="pie" data-percentage="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
@@ -55,13 +55,13 @@ include('header.php');
                             </div>
                             <div class="infos-container">
                                 <h4 data-percentage="1" class="cont">0</h4>
-                                <h3>of events beneficiaries</h3>
+                                <h3>of event beneficiaries</h3>
                                 <p>were associated with the </br><?php echo $titulo ?> Pillar activities.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center c-pt">
+                <div class="row justify-content-md-center align-items-center c-pt">
                     <div class="activity-item">
                         <img src="assets/images/pilar-icon-04@2x.png" alt="">
                     </div>
@@ -113,14 +113,21 @@ include('header.php');
                                     <h4>337</h4>
                                     <h5>Number of learners</h5>
                                 </li>
-                                <li class="data-certificates" data-info="2916">
+                                <li class="data-certificates" data-info="200">
                                     <h4>200</h4>
                                     <h5>Certificates*</h5>
                                 </li>
                             </ul>
                         </div>
-                        <p class="text-obs">*Certificates of completion and participation from learning events with objective assessment of learning requirements.
-                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 row mx-auto">
+                        <p class="text-obs col-md-6 ml-auto">*Certificates of completion and participation from learning events with objective assessment of learning requirements.</p>
                     </div>
                 </div>
             </div>
@@ -137,52 +144,46 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            <div class="container pt-5 mt-5 c-pb">
+            <div class="container pt-xl-5 mt-5 c-pb">
                 <div class="row flex-column align-items-center no-gutters pb-5">
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-01.svg" alt="">
                         <div class="content">
-                            <p>Strengthened knowledge and skills of 45 public officials, private and civil society stakeholders on public finance and debt management, trade and intellectual property rights primarily through e-Learning courses.</p>
+                            <p>Strengthened knowledge and skills of <strong>45 public officials, private and civil society stakeholders</strong> on public finance and debt management, trade and intellectual property rights primarily through e-Learning courses.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-02.svg" alt="">
                         <div class="content">
-                            <p>Developed and delivered online training on Trade, Food Security and Nutrition for 53 representatives from government and related authorities in Sub-Saharan Africa who are directly involved in the formulation and implementation of agricultural policies and programmes. Beneficiary countries include Burundi, Benin, Botswana, Côte d’Ivoire, Ethiopia, Ghana, Kenya, Lesotho, Madagascar, Mali, Mauritius, Malawi, Namibia, Niger, Nigeria, Rwanda, Seychelles, Sierra Leone, Eswatini, Togo, Tanzania, Uganda, South Africa, Zambia, and Zimbabwe.</p>
+                            <p>Developed and delivered <strong>online training on Trade, Food Security and Nutrition</strong> for <strong>53 representatives from government and related authorities in Sub-Saharan Africa</strong> who are directly involved in the formulation and implementation of agricultural policies and programmes. Beneficiary countries include Burundi, Benin, Botswana, Côte d’Ivoire, Ethiopia, Ghana, Kenya, Lesotho, Madagascar, Mali, Mauritius, Malawi, Namibia, Niger, Nigeria, Rwanda, Seychelles, Sierra Leone, Eswatini, Togo, Tanzania, Uganda, South Africa, Zambia, and Zimbabwe.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
-                            <p>Developed knowledge and skills of 22 Mexican Foreign Service Officials in the field of public finance and trade through e-learning. Over the past 6 years, Mexican officials have been participating in UNITAR courses focusing on privacy and data protection, intellectual property law, international negotiation, conflict and dispute resolution, and trade finance infrastructure development.</p>
+                            <p>Developed knowledge and skills of <strong>22 Mexican Foreign Service Officials in the field of public finance and trade</strong> through e-learning. Over the past 6 years, Mexican officials have been participating in UNITAR courses focusing on privacy and data protection, intellectual property law, international negotiation, conflict and dispute resolution, and trade finance infrastructure development.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-04.svg" alt="">
                         <div class="content">
-                            <p>Strengthened knowledge and skills of 15 Afghan women from the public sector, private sector, NGOs and academia on women’s leadership, good governance and the Sustainable Development Goals to develop and undertake initiatives that empower women, their organizations and their communities.</p>
+                            <p>Strengthened knowledge and skills of <strong>15 Afghan women</strong> from the <strong>public sector, private sector, NGOs and academia on women’s leadership, good governance and the Sustainable Development Goals</strong> to develop and undertake initiatives that empower women, their organizations and their communities.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-05.svg" alt="">
                         <div class="content">
-                            <p>Raised awareness of <strong>199 youth and key stakeholders</strong> on the role of young people in sustainable development, both as a vulnerable part of society and as active agents, through the <strong>1M2030 Youth Leadership conference in Geneva.</strong></p>
+                            <p>Trained <strong>27 civil society and NGO representatives</strong> from <strong>14 Pacific Ocean Small Island Developing States (SIDS)</strong> on <strong>women’s leadership and good practice around Tsunami-based Disaster Risk Reduction</strong>, joining a community of over 120 female alumni across the Pacific and Indian Ocean SIDS working to ensure their communities and organizations are prepared for natural disasters.</p>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
+                    <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-06.svg" alt="">
                         <div class="content">
-                            <p>Trained 27 civil society and NGO representatives from 14 Pacific Ocean Small Island Developing States (SIDS) on women’s leadership and good practice around Tsunami-based Disaster Risk Reduction, joining a community of over 120 female alumni across the Pacific and Indian Ocean SIDS working to ensure their communities and organizations are prepared for natural disasters.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 highlights-item">
-                        <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-07.svg" alt="">
-                        <div class="content">
-                            <p>In collaboration with the United Nations Development Programme Syria Country Office, trained 15 civilian entrepreneurs from rural areas in Syria with workshops in Syria and Japan. Following the programme, five of the start-ups successfully receiving seed-funding.</p>
+                            <p>In collaboration with the United Nations Development Programme Syria Country Office, <strong>trained 15 civilian entrepreneurs from rural areas in Syria</strong> with <strong>workshops in Syria and Japan</strong>. Following the programme, five of the start-ups successfully receiving seed-funding.</p>
                         </div>
                     </div>
                     <div class="w-100"></div>
-                    <p class="text-right"><a href="" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                    <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=62" class="btn btn-<?php echo $page_class ?> btn-color btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                 </div>
             </div>
         </section>
@@ -195,16 +196,16 @@ include('header.php');
                 <div class="row align-items-center">
                     <div class="col-10 offset-1 col-md-5 offset-md-0 offset-xl-1">
                         <div class="image">
-                            <img src="assets/images/hero-pilar-<?php echo $page_class ?>-img-01.jpg" alt="Mai Thin Yu Mon - Myanmar"> 
+                            <img src="assets/images/hero-pilar-<?php echo $page_class ?>-img-01.jpg" alt="Hussein Naeem Hasan Naser - Iraq"> 
                         </div>
                         <div class="image-desc bg-<?php echo $page_class ?>">
-                            <h3>Mai Thin Yu Mon</h3>
-                            <p>Myanmar</p>
+                            <h3>Hussein Naeem Hasan Naser</h3>
+                            <p>Iraq</p>
                         </div>
                     </div>
                     <div class="col-10 col-md-7 col-xl-6 offset-1 offset-md-0 text-desc font-size-3">
-                        <p>“This knowledge and experience helped me greatly in my daily work to accomplish a good deal, especially when being a part of setting up and strengthening Indigenous women’s networks and Indigenous youth platforms at Asia level, national level and community level which includes a lot of facilitating for people with different backgrounds and interests.”</p>
-                        <p class="text-right"><a href="" class="btn btn-light btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                        <p>“During the training I learned a lot about business. I learned to negotiate, solve problems and conduct market research. But, more importantly, I learned how to build solutions that are not only commercially profitable but also socially relevant, that are designed considering local needs.”</p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=67" class="btn btn-light btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>
@@ -218,16 +219,16 @@ include('header.php');
                 <div class="row align-items-center">
                     <div class="col-10 offset-1 col-md-5 offset-1 offset-md-0 order-md-2">
                         <div class="image">
-                            <img src="assets/images/hero-pilar-<?php echo $page_class ?>-img-02.jpg" alt="Ingy Hamdy - Egypt"> 
+                            <img src="assets/images/hero-pilar-<?php echo $page_class ?>-img-02.jpg" alt="Dr Fred Masibo Simiyu - Kenya"> 
                         </div>
                         <div class="image-desc bg-light">
-                            <h3>Ingy Hamdy</h3>
-                            <p>Egypt</p>
+                            <h3>Dr Fred Masibo Simiyu</h3>
+                            <p>Kenya</p>
                         </div>
                     </div>
-                    <div class="col-10 col-md-7 col-xl-6 offset-md-0 text-desc font-size-3">
-                        <p>“This knowledge and experience helped me greatly in my daily work to accomplish a good deal, especially when being a part of setting up and strengthening Indigenous women’s networks and Indigenous youth platforms at Asia level, national level and community level which includes a lot of facilitating for people with different backgrounds and interests.”</p>
-                        <p class="text-right"><a href="" class="btn btn-color btn-peace btn-icon btn-right"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
+                    <div class="col-10 col-md-7 col-xl-5 offset-md-0 offset-xl-1 text-desc font-size-3">
+                        <p>“I am now well informed of the issues that are unfolding at the multilateral level as well as of Kenya’s position in this playing field.”</p>
+                        <p class="text-right"><a href="/download/unitar_results_report_2019.pdf#page=71" class="btn btn-color btn-<?php echo $page_class ?> btn-icon btn-right" target="_blank"><span>Read more</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path transform="translate(9.849 9.849)" d="M-.228.1l-7.407,7.66a1.267,1.267,0,0,1-1.834,0,1.374,1.374,0,0,1,0-1.9L-2.978-.848-9.469-7.56a1.374,1.374,0,0,1,0-1.9,1.267,1.267,0,0,1,1.834,0L-.228-1.8a1.374,1.374,0,0,1,0,1.9" /></svg></i></a></p>
                     </div>
                 </div>
             </div>

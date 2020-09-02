@@ -1,5 +1,5 @@
 <script>
-
+if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(window.navigator.userAgent) ) {
     gsap.registerPlugin(ScrollTrigger);
 
     ScrollTrigger.defaults({
@@ -267,6 +267,10 @@
         delay: 1.6
     });
 
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
     gsap.set(".text-obs", {
         opacity: 0
     });
@@ -281,10 +285,6 @@
         stagger: 0.1,
         duration: 0.6,
     });
-    
-    function numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
     
     gsap.from(".highlights-item-image .content", {
         scrollTrigger: {
@@ -351,7 +351,6 @@
         delay: 0.3
     });
     gsap.from("#testimonial-1 .detalhe-image", {
-        start: "0 100%",
         scrollTrigger: "#testimonial-1 .image",
         opacity: 0,
         duration: 0.6,
@@ -383,7 +382,6 @@
         delay: 0.6
     });
     gsap.from("#testimonial-2 .image-desc > *", {
-        start: "0 100%",
         scrollTrigger: "#testimonial-2 .image",
         opacity: 0,
         x: 100,
@@ -404,6 +402,49 @@
         duration: 0.6,
         delay: 0.8
     });
+} else {
+    gsap.from(".hero-pilar-detalhe-1", {
+        scrollTrigger: ".hero-pilar",
+        opacity: 0,
+        duration: 1,
+        delay: 0.8
+    });
+    gsap.from(".image-mask", {
+        opacity: 0,
+        x: '-100%',
+        duration: 1
+    });
+    gsap.from(".image-mask .image-inner", {
+        opacity: 0,
+        x: '100%',
+        scale: 1.5,
+        duration: 1
+    });
+    gsap.from(".hero-icon-text h1", {
+        opacity: 0,
+        x: '-50%',
+        duration: 0.6,
+        delay: 0.6
+    });
+    gsap.from(".hero-pilar-image h1 i svg", {
+        opacity: 0,
+        scale: 0.5,
+        transformOrigin: "center bottom",
+        duration: 0.6,
+        delay: 1.2
+    });
+    gsap.from(".pilar-hero-text", {
+        opacity: 0,
+        scale: 0.5,
+        duration: 0.6,
+        delay: 0.8,
+        stagger: 0.2,
+    });
 
-    
+    var pieVal = $('#pie').attr('data-percentage');
+    $('.pie-circle').css({'stroke-dashoffset': 1640 - (1640 * 100) / 100}, 1000);
+    $('#pie').css({'stroke-dashoffset': 943 - (943 * pieVal) / 100}, 1000);
+    var cont1 = $('.infos-container .cont').attr('data-percentage');
+    $('.cont').text(cont1 + "%");  
+}
 </script>

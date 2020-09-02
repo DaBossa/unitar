@@ -1,31 +1,5 @@
 $(document).ready(function () {
 
-    $(window).on( "load", function(){
-
-        $('#loader').addClass('hide');
-
-        $('html, body').animate({
-            scrollTop: 0
-        }, 10, "swing");
-    
-        if (location.pathname.replace(/^\//,'') == location.pathname.replace(/^\//,'') && location.hostname == location.hostname) {
-            var target = $(location.hash);
-            //target = target.length ? target : $('[name=' + location.hash.slice(1) +']');
-            //scrollTop: 0
-            if(target && target.length > 0){
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 900, "swing");
-            }
-            //return false;
-        } else {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 10, "swing");
-        }
-        
-    });
-
     var lastScrollTop = '300';
     $(window).on('scroll', function (event) {
         var st = $(this).scrollTop();
@@ -56,4 +30,31 @@ $(document).ready(function () {
         }, 1000);
     });
 
+});
+//$('#loader').addClass('hide');
+
+$(window).on("load", function() {
+
+    $('#loader').addClass('hide');
+
+    $('html, body').animate({
+        scrollTop: 0
+    }, 10, "swing");
+
+    if (location.pathname.replace(/^\//,'') == location.pathname.replace(/^\//,'') && location.hostname == location.hostname) {
+        var target = $(location.hash);
+        //target = target.length ? target : $('[name=' + location.hash.slice(1) +']');
+        //scrollTop: 0
+        if(target && target.length > 0){
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 900, "swing");
+        }
+        //return false;
+    } else {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 10, "swing");
+    }
+    
 });
