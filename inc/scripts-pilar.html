@@ -1,449 +1,454 @@
 <script>
 if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(window.navigator.userAgent) ) {
-    gsap.registerPlugin(ScrollTrigger);
+    $(window).on("load", function() {
+        gsap.registerPlugin(ScrollTrigger);
 
-    ScrollTrigger.defaults({
-        toggleActions: "play reverse play reverse",
-        start: "top 70%",
-        end: "70% top",
-        //markers: true
-    });
-
-    gsap.utils.toArray('.anima-type1').forEach(anima_type1 => {
-        gsap.from(anima_type1, {
-            y: 50,
-            opacity: 0,
-            ease: "power2.inOut",
-            duration: 0.6,
-            scrollTrigger: {
-                trigger: anima_type1,
-                //markers: true
-            }
+        ScrollTrigger.defaults({
+            toggleActions: "play reverse play reverse",
+            start: "top 70%",
+            end: "70% top",
+            //markers: true
         });
-    });
 
-    gsap.from(".image-mask", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        x: '-100%',
-        duration: 1
-    });
-    gsap.from(".image-mask .image-inner", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        x: '100%',
-        scale: 1.5,
-        duration: 1
-    });
-    gsap.from(".hero-pilar-detalhe-1", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        duration: 1,
-        delay: 1.2
-    });
-    gsap.from(".hero-pilar-detalhe-2", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        y: 100,
-        duration: 0.6,
-        delay: 1
-    });
-    gsap.from(".hero-icon-text h1", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        x: '-50%',
-        duration: 0.6,
-        delay: 0.6
-    });
-    gsap.from(".hero-pilar-image h1 i svg", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        scale: 0.5,
-        transformOrigin: "center bottom",
-        duration: 0.6,
-        delay: 1.2
-    });
-    gsap.from(".pilar-hero-text", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        scale: 0.5,
-        duration: 0.6,
-        delay: 0.8,
-        stagger: 0.2,
-    });
-
-    gsap.from(".pie-circle", {
-        scrollTrigger: "#pie",
-        opacity: 0,
-        duration: 0.6,
-    });
-    gsap.from("#pie", {
-        scrollTrigger: "#pie",
-        opacity: 0,
-        scale: 0.5,
-        duration: 0.6,
-    });
-
-    var pieVal = $('#pie').attr('data-percentage');
-    ScrollTrigger.create({
-        trigger: "#pie",
-        onEnter:function(){
-            $('.pie-circle').animate({'stroke-dashoffset': 1640 - (1640 * 100) / 100}, 1000)
-            $('#pie').delay(300).animate({'stroke-dashoffset': 943 - (943 * pieVal) / 100}, 1000)
-        }
-    });
-
-    gsap.from(".infos-container h4.cont, .infos-container h3, .infos-container p", {
-        scrollTrigger: "#pie",
-        opacity: 0,
-        x: 150,
-        delay: 0.3,
-        stagger: 0.2,
-        duration: 0.6,
-    });
-
-    var cont1={val:0} , NewVal = $('.infos-container .cont').attr('data-percentage');
-    let contador1 = TweenLite.to(cont1,2,{
-        val:NewVal,
-        roundProps:"val",
-        onUpdate:function(){
-            $('.cont').text(cont1.val + "%");
-        }
-    });
-    st1 = ScrollTrigger.create({
-        trigger: "#pie",
-        animation: contador1
-    });
-    
-    gsap.from(".activity-item, .activity-text", {
-        scrollTrigger: {
-            trigger: "#pie",
-            endTrigger: ".pilar-infos",
-        },
-        opacity: 0,
-        scale: 0.5,
-        stagger: 0.1,
-        duration: 0.6,
-        delay: 1,
-    });
-
-    gsap.from(".info-numbers", {
-        scrollTrigger: ".info-numbers",
-        opacity: 0,
-        y: 150,
-        duration: 0.6,
-    });
-
-    gsap.from(".info-numbers .content:nth-child(1) i", {
-        scrollTrigger: ".info-numbers",
-        scale: 1.5,
-        transformOrigin: "left top",
-        delay: 0.6,
-        duration: 0.4,
-    });
-
-    gsap.from(".data-events", {
-        scrollTrigger: {
-            trigger: ".info-numbers"
-        },
-        opacity: 0,
-        x: 50,
-        stagger: 0.1,
-        duration: 0.6,
-        onEnter:function(){
-            var dn = $(".data-events").attr("data-info");
-            $({ n: 0 }).animate({ n: dn }, {
-                step: function(value) {
-                $(".data-events h4").html(numberWithCommas(Math.ceil(value)));
-                }, duration: 1000});
-        },
-        delay:0.6
-    });
-
-    gsap.from(".data-events-days", {
-        scrollTrigger: {
-            trigger: ".info-numbers"
-        },
-        opacity: 0,
-        x: 50,
-        stagger: 0.1,
-        duration: 0.6,
-        onEnter:function(){
-            var dn = $(".data-events-days").attr("data-info");
-            $({ n: 0 }).animate({ n: dn }, {
-                step: function(value) {
-                $(".data-events-days h4").html(numberWithCommas(Math.ceil(value)));
-                }, duration: 1000});
-        },
-        delay:0.8
-    });
-    
-    gsap.from(".data-beneficiaries", {
-        scrollTrigger: {
-            trigger: ".info-numbers"
-        },
-        opacity: 0,
-        x: 50,
-        stagger: 0.1,
-        duration: 0.6,
-        onEnter:function(){
-            var dn = $(".data-beneficiaries").attr("data-info");
-            $({ n: 0 }).animate({ n: dn }, {
-                step: function(value) {
-                $(".data-beneficiaries h4").html(numberWithCommas(Math.ceil(value)));
-                }, duration: 1000});
-            },
-        delay:1
-    });
-
-    gsap.from(".info-numbers .content:nth-child(2) i", {
-        scrollTrigger: ".info-numbers",
-        scale: 1.5,
-        transformOrigin: "left top",
-        duration: 0.6,
-        delay:0.8
-    });
-
-    gsap.from(".data-learning-events", {
-        scrollTrigger: {
-            trigger: ".info-numbers"
-        },
-        opacity: 0,
-        x: 50,
-        stagger: 0.1,
-        duration: 0.6,
-        onEnter:function(){
-            var dn = $(".data-learning-events").attr("data-info");
-            $({ n: 0 }).animate({ n: dn }, {
-                step: function(value) {
-                $(".data-learning-events h4").html(numberWithCommas(Math.ceil(value)));
-                }, duration: 1000});
-        },
-        delay:1.2
-    });
-    
-    gsap.from(".data-learners", {
-        scrollTrigger: {
-            trigger: ".info-numbers"
-        },
-        opacity: 0,
-        x: 50,
-        stagger: 0.1,
-        duration: 0.6,
-        onEnter:function(){
-            var dn = $(".data-learners").attr("data-info");
-            $({ n: 0 }).animate({ n: dn }, {
-                step: function(value) {
-                    //$(".data-learners h4").html(Math.round(value));
-                    $(".data-learners h4").html(numberWithCommas(Math.ceil(value)));
-                }, duration: 1000});
-            },
-        delay: 1.4
-    });
-    
-    gsap.from(".data-certificates", {
-        scrollTrigger: {
-            trigger: ".info-numbers"
-        },
-        opacity: 0,
-        x: 50,
-        stagger: 0.1,
-        duration: 0.6,
-        onEnter:function(){
-            var dn = $(".data-certificates").attr("data-info");
-            $({ n: 0 }).animate({ n: dn }, {
-                step: function(value) {
-                    //$(".data-learners h4").html(Math.round(value));
-                    $(".data-certificates h4").html(numberWithCommas(Math.ceil(value)));
-                }, duration: 1000});
-        },
-        onComplete:function(){
-            gsap.to(".text-obs", {
-                opacity: 1,
-                duration: 0.6
+        gsap.utils.toArray('.anima-type1').forEach(anima_type1 => {
+            gsap.from(anima_type1, {
+                y: 50,
+                opacity: 0,
+                ease: "power2.inOut",
+                duration: 0.6,
+                scrollTrigger: {
+                    trigger: anima_type1,
+                    //markers: true
+                }
             });
-        },
-        delay: 1.6
-    });
+        });
 
-    function numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
-
-    gsap.set(".text-obs", {
-        opacity: 0
-    });
-
-    gsap.from(".heading-highlights svg, .heading-highlights h2", {
-        scrollTrigger: {
-            trigger: ".heading-highlights",
-            start: "top center"
-        },
-        opacity: 0,
-        y: 50,
-        stagger: 0.1,
-        duration: 0.6,
-    });
-    
-    gsap.from(".highlights-item-image .content", {
-        scrollTrigger: {
-            trigger: ".highlights-item-image"
-        },
-        opacity: 0,
-        x: 150,
-        duration: 0.6,
-        delay: 0.2
-    });
-    gsap.from(".highlights-item-image .detalhe-wave", {
-        scrollTrigger: {
-            trigger: ".highlights-item-image .detalhe-wave"
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.6
-    });
-    gsap.from("#highlights .btn-color", {
-        scrollTrigger: {
-            trigger: "#highlights .btn-color",
-            start: "top bottom"
-        },
-        opacity: 0,
-        scale: 1.5,
-        duration: 0.6
-    });
-
-    gsap.utils.toArray('.highlights-item').forEach(highlights_item => {
-        gsap.from(highlights_item, {
-            y: 50,
+        gsap.from(".image-mask", {
+            scrollTrigger: ".hero-pilar",
             opacity: 0,
-            ease: "power2.inOut",
+            x: '-100%',
+            duration: 1
+        });
+        gsap.from(".image-mask .image-inner", {
+            scrollTrigger: ".hero-pilar",
+            opacity: 0,
+            x: '100%',
+            scale: 1.5,
+            duration: 1
+        });
+        gsap.from(".hero-pilar-detalhe-1", {
+            scrollTrigger: ".hero-pilar",
+            opacity: 0,
+            duration: 1,
+            delay: 1.2
+        });
+        gsap.from(".hero-pilar-detalhe-2", {
+            scrollTrigger: ".hero-pilar",
+            opacity: 0,
+            y: 100,
             duration: 0.6,
-            scrollTrigger: {
-                trigger: highlights_item,
-                //markers: true
+            delay: 1
+        });
+        gsap.from(".hero-icon-text h1", {
+            scrollTrigger: ".hero-pilar",
+            opacity: 0,
+            x: '-50%',
+            duration: 0.6,
+            delay: 0.6
+        });
+        gsap.from(".hero-pilar-image h1 i svg", {
+            scrollTrigger: ".hero-pilar",
+            opacity: 0,
+            scale: 0.5,
+            transformOrigin: "center bottom",
+            duration: 0.6,
+            delay: 1.2
+        });
+        gsap.from(".pilar-hero-text", {
+            scrollTrigger: ".hero-pilar",
+            opacity: 0,
+            scale: 0.5,
+            duration: 0.6,
+            delay: 0.8,
+            stagger: 0.2,
+        });
+
+        gsap.from(".pie-circle", {
+            scrollTrigger: "#pie",
+            opacity: 0,
+            duration: 0.6,
+        });
+        gsap.from("#pie", {
+            scrollTrigger: "#pie",
+            opacity: 0,
+            scale: 0.5,
+            duration: 0.6,
+        });
+
+        var pieVal = $('#pie').attr('data-percentage');
+        ScrollTrigger.create({
+            trigger: "#pie",
+            onEnter:function(){
+                $('.pie-circle').animate({'stroke-dashoffset': 1640 - (1640 * 100) / 100}, 1000)
+                $('#pie').delay(300).animate({'stroke-dashoffset': 943 - (943 * pieVal) / 100}, 1000)
             }
+        });
+
+        gsap.from(".infos-container h4.cont, .infos-container h3, .infos-container p", {
+            scrollTrigger: "#pie",
+            opacity: 0,
+            x: 150,
+            delay: 0.3,
+            stagger: 0.2,
+            duration: 0.6,
+        });
+
+        var cont1={val:0} , NewVal = $('.infos-container .cont').attr('data-percentage');
+        let contador1 = TweenLite.to(cont1,2,{
+            val:NewVal,
+            roundProps:"val",
+            onUpdate:function(){
+                $('.cont').text(cont1.val + "%");
+            }
+        });
+        st1 = ScrollTrigger.create({
+            trigger: "#pie",
+            animation: contador1
+        });
+        
+        gsap.from(".activity-item, .activity-text", {
+            scrollTrigger: {
+                trigger: "#pie",
+                endTrigger: ".pilar-infos",
+            },
+            opacity: 0,
+            scale: 0.5,
+            stagger: 0.1,
+            duration: 0.6,
+            delay: 1,
+        });
+
+        gsap.from(".info-numbers", {
+            scrollTrigger: ".info-numbers",
+            opacity: 0,
+            y: 150,
+            duration: 0.6,
+        });
+
+        gsap.from(".info-numbers .content:nth-child(1) i", {
+            scrollTrigger: ".info-numbers",
+            scale: 1.5,
+            transformOrigin: "left top",
+            delay: 0.6,
+            duration: 0.4,
+        });
+
+        gsap.from(".data-events", {
+            scrollTrigger: {
+                trigger: ".info-numbers"
+            },
+            opacity: 0,
+            x: 50,
+            stagger: 0.1,
+            duration: 0.6,
+            onEnter:function(){
+                var dn = $(".data-events").attr("data-info");
+                $({ n: 0 }).animate({ n: dn }, {
+                    step: function(value) {
+                    $(".data-events h4").html(numberWithCommas(Math.ceil(value)));
+                    }, duration: 1000});
+            },
+            delay:0.6
+        });
+
+        gsap.from(".data-events-days", {
+            scrollTrigger: {
+                trigger: ".info-numbers"
+            },
+            opacity: 0,
+            x: 50,
+            stagger: 0.1,
+            duration: 0.6,
+            onEnter:function(){
+                var dn = $(".data-events-days").attr("data-info");
+                $({ n: 0 }).animate({ n: dn }, {
+                    step: function(value) {
+                    $(".data-events-days h4").html(numberWithCommas(Math.ceil(value)));
+                    }, duration: 1000});
+            },
+            delay:0.8
+        });
+        
+        gsap.from(".data-beneficiaries", {
+            scrollTrigger: {
+                trigger: ".info-numbers"
+            },
+            opacity: 0,
+            x: 50,
+            stagger: 0.1,
+            duration: 0.6,
+            onEnter:function(){
+                var dn = $(".data-beneficiaries").attr("data-info");
+                $({ n: 0 }).animate({ n: dn }, {
+                    step: function(value) {
+                    $(".data-beneficiaries h4").html(numberWithCommas(Math.ceil(value)));
+                    }, duration: 1000});
+                },
+            delay:1
+        });
+
+        gsap.from(".info-numbers .content:nth-child(2) i", {
+            scrollTrigger: ".info-numbers",
+            scale: 1.5,
+            transformOrigin: "left top",
+            duration: 0.6,
+            delay:0.8
+        });
+
+        gsap.from(".data-learning-events", {
+            scrollTrigger: {
+                trigger: ".info-numbers"
+            },
+            opacity: 0,
+            x: 50,
+            stagger: 0.1,
+            duration: 0.6,
+            onEnter:function(){
+                var dn = $(".data-learning-events").attr("data-info");
+                $({ n: 0 }).animate({ n: dn }, {
+                    step: function(value) {
+                    $(".data-learning-events h4").html(numberWithCommas(Math.ceil(value)));
+                    }, duration: 1000});
+            },
+            delay:1.2
+        });
+        
+        gsap.from(".data-learners", {
+            scrollTrigger: {
+                trigger: ".info-numbers"
+            },
+            opacity: 0,
+            x: 50,
+            stagger: 0.1,
+            duration: 0.6,
+            onEnter:function(){
+                var dn = $(".data-learners").attr("data-info");
+                $({ n: 0 }).animate({ n: dn }, {
+                    step: function(value) {
+                        //$(".data-learners h4").html(Math.round(value));
+                        $(".data-learners h4").html(numberWithCommas(Math.ceil(value)));
+                    }, duration: 1000});
+                },
+            delay: 1.4
+        });
+        
+        gsap.from(".data-certificates", {
+            scrollTrigger: {
+                trigger: ".info-numbers"
+            },
+            opacity: 0,
+            x: 50,
+            stagger: 0.1,
+            duration: 0.6,
+            onEnter:function(){
+                var dn = $(".data-certificates").attr("data-info");
+                $({ n: 0 }).animate({ n: dn }, {
+                    step: function(value) {
+                        //$(".data-learners h4").html(Math.round(value));
+                        $(".data-certificates h4").html(numberWithCommas(Math.ceil(value)));
+                    }, duration: 1000});
+            },
+            onComplete:function(){
+                gsap.to(".text-obs", {
+                    opacity: 1,
+                    duration: 0.6
+                });
+            },
+            delay: 1.6
+        });
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        gsap.set(".text-obs", {
+            opacity: 0
+        });
+
+        gsap.from(".heading-highlights svg, .heading-highlights h2", {
+            scrollTrigger: {
+                trigger: ".heading-highlights",
+                start: "top center"
+            },
+            opacity: 0,
+            y: 50,
+            stagger: 0.1,
+            duration: 0.6,
+        });
+        
+        gsap.from(".highlights-item-image .content", {
+            scrollTrigger: {
+                trigger: ".highlights-item-image"
+            },
+            opacity: 0,
+            x: 150,
+            duration: 0.6,
+            delay: 0.2
+        });
+        gsap.from(".highlights-item-image .detalhe-wave", {
+            scrollTrigger: {
+                trigger: ".highlights-item-image .detalhe-wave"
+            },
+            opacity: 0,
+            y: 50,
+            duration: 0.6
+        });
+        gsap.from("#highlights .btn-color", {
+            scrollTrigger: {
+                trigger: "#highlights .btn-color",
+                start: "top bottom"
+            },
+            opacity: 0,
+            scale: 1.5,
+            duration: 0.6
+        });
+
+        gsap.utils.toArray('.highlights-item').forEach(highlights_item => {
+            gsap.from(highlights_item, {
+                y: 50,
+                opacity: 0,
+                ease: "power2.inOut",
+                duration: 0.6,
+                scrollTrigger: {
+                    trigger: highlights_item,
+                    //markers: true
+                }
+            });
+        });
+
+        gsap.from("#testimonial-1 .image img", {
+            scrollTrigger: "#testimonial-1 .image",
+            opacity: 0,
+            scale: 1.5,
+            y: 100,
+            duration: 1,
+            ease: "power2.inOut"
+        });
+        gsap.from("#testimonial-1 .text-desc > *", {
+            scrollTrigger: "#testimonial-1 .image",
+            opacity: 0,
+            y: 100,
+            duration: 0.6,
+            stagger: 0.2,
+            delay: 0.6
+        });
+        gsap.from("#testimonial-1 .image-desc > *", {
+            scrollTrigger: "#testimonial-1 .image",
+            opacity: 0,
+            x: 100,
+            duration: 0.6,
+            stagger: 0.1,
+            delay: 0.3
+        });
+        gsap.from("#testimonial-1 .detalhe-image", {
+            scrollTrigger: "#testimonial-1 .image",
+            opacity: 0,
+            duration: 0.6,
+            delay: 0.6
+        });
+        gsap.from("#testimonial-1 .detalhe-wave", {
+            scrollTrigger: "#testimonial-1 .image",
+            opacity: 0,
+            duration: 0.6,
+            delay: 0.8
+        });
+
+        
+
+        gsap.from("#testimonial-2 .image img", {
+            scrollTrigger: "#testimonial-2 .image",
+            opacity: 0,
+            scale: 1.5,
+            y: 100,
+            duration: 1,
+            ease: "power2.inOut"
+        });
+        gsap.from("#testimonial-2 .text-desc > *", {
+            scrollTrigger: "#testimonial-2 .image",
+            opacity: 0,
+            y: 100,
+            duration: 0.6,
+            stagger: 0.2,
+            delay: 0.6
+        });
+        gsap.from("#testimonial-2 .image-desc > *", {
+            scrollTrigger: "#testimonial-2 .image",
+            opacity: 0,
+            x: 100,
+            duration: 0.6,
+            stagger: 0.1,
+            delay: 0.3
+        });
+        gsap.from("#testimonial-2 .detalhe-image", {
+            start: "0 100%",
+            scrollTrigger: "#testimonial-2 .image",
+            opacity: 0,
+            duration: 0.6,
+            delay: 0.6
+        });
+        gsap.from("#testimonial-2 .detalhe-wave", {
+            scrollTrigger: "#testimonial-2 .image",
+            opacity: 0,
+            duration: 0.6,
+            delay: 0.8
         });
     });
 
-    gsap.from("#testimonial-1 .image img", {
-        scrollTrigger: "#testimonial-1 .image",
-        opacity: 0,
-        scale: 1.5,
-        y: 100,
-        duration: 1,
-        ease: "power2.inOut"
-    });
-    gsap.from("#testimonial-1 .text-desc > *", {
-        scrollTrigger: "#testimonial-1 .image",
-        opacity: 0,
-        y: 100,
-        duration: 0.6,
-        stagger: 0.2,
-        delay: 0.6
-    });
-    gsap.from("#testimonial-1 .image-desc > *", {
-        scrollTrigger: "#testimonial-1 .image",
-        opacity: 0,
-        x: 100,
-        duration: 0.6,
-        stagger: 0.1,
-        delay: 0.3
-    });
-    gsap.from("#testimonial-1 .detalhe-image", {
-        scrollTrigger: "#testimonial-1 .image",
-        opacity: 0,
-        duration: 0.6,
-        delay: 0.6
-    });
-    gsap.from("#testimonial-1 .detalhe-wave", {
-        scrollTrigger: "#testimonial-1 .image",
-        opacity: 0,
-        duration: 0.6,
-        delay: 0.8
-    });
-
-    
-
-    gsap.from("#testimonial-2 .image img", {
-        scrollTrigger: "#testimonial-2 .image",
-        opacity: 0,
-        scale: 1.5,
-        y: 100,
-        duration: 1,
-        ease: "power2.inOut"
-    });
-    gsap.from("#testimonial-2 .text-desc > *", {
-        scrollTrigger: "#testimonial-2 .image",
-        opacity: 0,
-        y: 100,
-        duration: 0.6,
-        stagger: 0.2,
-        delay: 0.6
-    });
-    gsap.from("#testimonial-2 .image-desc > *", {
-        scrollTrigger: "#testimonial-2 .image",
-        opacity: 0,
-        x: 100,
-        duration: 0.6,
-        stagger: 0.1,
-        delay: 0.3
-    });
-    gsap.from("#testimonial-2 .detalhe-image", {
-        start: "0 100%",
-        scrollTrigger: "#testimonial-2 .image",
-        opacity: 0,
-        duration: 0.6,
-        delay: 0.6
-    });
-    gsap.from("#testimonial-2 .detalhe-wave", {
-        scrollTrigger: "#testimonial-2 .image",
-        opacity: 0,
-        duration: 0.6,
-        delay: 0.8
-    });
 } else {
-    gsap.from(".hero-pilar-detalhe-1", {
-        scrollTrigger: ".hero-pilar",
-        opacity: 0,
-        duration: 1,
-        delay: 1.2
+    $(window).on("load", function() {
+        gsap.from(".hero-pilar-detalhe-1", {
+            scrollTrigger: ".hero-pilar",
+            opacity: 0,
+            duration: 1,
+            delay: 1.2
+        });
+        gsap.from(".image-mask", {
+            opacity: 0,
+            x: '-100%',
+            duration: 1
+        });
+        gsap.from(".image-mask .image-inner", {
+            opacity: 0,
+            x: '100%',
+            scale: 1.5,
+            duration: 1
+        });
+        gsap.from(".hero-icon-text h1", {
+            opacity: 0,
+            x: '-50%',
+            duration: 0.6,
+            delay: 0.6
+        });
+        gsap.from(".hero-pilar-image h1 i svg", {
+            opacity: 0,
+            scale: 0.5,
+            transformOrigin: "center bottom",
+            duration: 0.6,
+            delay: 1.2
+        });
+        gsap.from(".pilar-hero-text", {
+            opacity: 0,
+            scale: 0.5,
+            duration: 0.6,
+            delay: 0.8,
+            stagger: 0.2,
+        });
+        
+        var pieVal = $('#pie').attr('data-percentage');
+        $('.pie-circle').css({'stroke-dashoffset': 1640 - (1640 * 100) / 100}, 1000);
+        $('#pie').css({'stroke-dashoffset': 943 - (943 * pieVal) / 100}, 1000);
+        var cont1 = $('.infos-container .cont').attr('data-percentage');
+        $('.cont').text(cont1 + "%");  
     });
-    gsap.from(".image-mask", {
-        opacity: 0,
-        x: '-100%',
-        duration: 1
-    });
-    gsap.from(".image-mask .image-inner", {
-        opacity: 0,
-        x: '100%',
-        scale: 1.5,
-        duration: 1
-    });
-    gsap.from(".hero-icon-text h1", {
-        opacity: 0,
-        x: '-50%',
-        duration: 0.6,
-        delay: 0.6
-    });
-    gsap.from(".hero-pilar-image h1 i svg", {
-        opacity: 0,
-        scale: 0.5,
-        transformOrigin: "center bottom",
-        duration: 0.6,
-        delay: 1.2
-    });
-    gsap.from(".pilar-hero-text", {
-        opacity: 0,
-        scale: 0.5,
-        duration: 0.6,
-        delay: 0.8,
-        stagger: 0.2,
-    });
-
-    var pieVal = $('#pie').attr('data-percentage');
-    $('.pie-circle').css({'stroke-dashoffset': 1640 - (1640 * 100) / 100}, 1000);
-    $('#pie').css({'stroke-dashoffset': 943 - (943 * pieVal) / 100}, 1000);
-    var cont1 = $('.infos-container .cont').attr('data-percentage');
-    $('.cont').text(cont1 + "%");  
 }
 </script>

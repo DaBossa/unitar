@@ -445,6 +445,7 @@ img {
     padding-left: 20px;
   }
   .navbar-expand-lg .navbar-collapse > .btn {
+    margin-top: 0;
     margin-left: 50px;
   }
 }

@@ -255,223 +255,225 @@ include('header.php');
 
 <script>
 if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(window.navigator.userAgent) ) {
-    gsap.registerPlugin(ScrollTrigger);
+    $(window).on("load", function() {
+        gsap.registerPlugin(ScrollTrigger);
 
-    ScrollTrigger.defaults({
-        toggleActions: "play reverse play reverse",
-        start: "top 70%",
-        end: "70% top",
-        //markers: true
-    });
+        ScrollTrigger.defaults({
+            toggleActions: "play reverse play reverse",
+            start: "top 70%",
+            end: "70% top",
+            //markers: true
+        });
 
-    gsap.utils.toArray('.anima-type1').forEach(anima_type1 => {
-        gsap.from(anima_type1, {
-            y: 50,
+        gsap.utils.toArray('.anima-type1').forEach(anima_type1 => {
+            gsap.from(anima_type1, {
+                y: 50,
+                opacity: 0,
+                ease: "power2.inOut",
+                duration: 0.6,
+                scrollTrigger: {
+                    trigger: anima_type1,
+                    //markers: true
+                }
+            });
+        });
+
+        gsap.from(".hero h1", {
             opacity: 0,
-            ease: "power2.inOut",
+            y: 300,
+            duration: 0.6
+        });
+
+        gsap.from("#foreword", {
+            opacity: 0,
+            y: 100,
             duration: 0.6,
-            scrollTrigger: {
-                trigger: anima_type1,
-                //markers: true
+            delay: 0.3
+        });
+        gsap.from("#foreword .image img", {
+            scrollTrigger: "#foreword .image",
+            opacity: 0,
+            scale: 1.5,
+            y: 100,
+            duration: 1,
+            ease: "power2.inOut"
+        });
+        gsap.from(".text-desc > *", {
+            scrollTrigger: "#foreword .image",
+            opacity: 0,
+            y: 100,
+            duration: 0.6,
+            stagger: 0.2,
+            delay: 0.6
+        });
+        gsap.from(".image-desc > *", {
+            start: "0 100%",
+            scrollTrigger: "#foreword .image",
+            opacity: 0,
+            x: 100,
+            duration: 0.6,
+            stagger: 0.1,
+            delay: 0.3
+        });
+        gsap.from(".detalhe-image", {
+            start: "0 100%",
+            scrollTrigger: "#foreword .image",
+            opacity: 0,
+            duration: 0.6,
+            delay: 0.6
+        });
+
+        gsap.from(".grafico-1 svg", {
+            scrollTrigger: ".grafico-1",
+            opacity: 0,
+            y: 100,
+            duration: 0.6
+        });
+        gsap.from(".cls-14, .cls-15", {
+            scrollTrigger: ".grafico-1",
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.2
+        }).delay(0.4);
+        gsap.from(".cls-12, .cls-13", {
+            scrollTrigger: ".grafico-1",
+            opacity: 0,
+            scaleX: 0.75,
+            duration: 0.6,
+            stagger: 0.6
+        }).delay(0.4);
+
+        gsap.from(".grafico-2 svg g > g, .grafico-2 svg g > path", {
+            scrollTrigger: ".grafico-2",
+            opacity: 0,
+            scale: 0.5,
+            transformOrigin: "center center",
+            stagger: 0.1,
+            duration: 0.6
+        });
+        gsap.from(".grafico-3 svg g > g, .grafico-3 svg g > image", {
+            scrollTrigger: ".grafico-3",
+            opacity: 0,
+            scale: 0.5,
+            transformOrigin: "center center",
+            stagger: 0.1,
+            duration: 0.6
+        });
+
+        gsap.from(".icon-text > div", {
+            scrollTrigger: ".icon-text",
+            opacity: 0,
+            scale: 0.5,
+            transformOrigin: "center center",
+            stagger: 0.2,
+            duration: 0.6
+        });
+        
+        var cont1={val:0} , NewVal = 59 ;
+        let contador1 = TweenLite.to(cont1,3,{
+            val:NewVal,
+            roundProps:"val",
+            onUpdate:function(){
+                document.getElementById("contador1").innerHTML=cont1.val + "%"
             }
         });
-    });
+        st1 = ScrollTrigger.create({
+            trigger: ".icon-text",
+            animation: contador1
+        });
 
-    gsap.from(".hero h1", {
-        opacity: 0,
-        y: 300,
-        duration: 0.6
-    });
+        var cont2={val2:0} , NewVal2 = 38 ;
+        let contador2 = TweenLite.to(cont2,3,{
+            val2:NewVal2,
+            roundProps:"val2",
+            onUpdate:function(){
+                document.getElementById("contador2").innerHTML=cont2.val2 + "%"
+            },
+            delay: 0.3
+        });
+        st2 = ScrollTrigger.create({
+            trigger: ".icon-text",
+            animation: contador2
+        });
 
-    gsap.from("#foreword", {
-        opacity: 0,
-        y: 100,
-        duration: 0.6,
-        delay: 0.3
-    });
-    gsap.from("#foreword .image img", {
-        scrollTrigger: "#foreword .image",
-        opacity: 0,
-        scale: 1.5,
-        y: 100,
-        duration: 1,
-        ease: "power2.inOut"
-    });
-    gsap.from(".text-desc > *", {
-        scrollTrigger: "#foreword .image",
-        opacity: 0,
-        y: 100,
-        duration: 0.6,
-        stagger: 0.2,
-        delay: 0.6
-    });
-    gsap.from(".image-desc > *", {
-        start: "0 100%",
-        scrollTrigger: "#foreword .image",
-        opacity: 0,
-        x: 100,
-        duration: 0.6,
-        stagger: 0.1,
-        delay: 0.3
-    });
-    gsap.from(".detalhe-image", {
-        start: "0 100%",
-        scrollTrigger: "#foreword .image",
-        opacity: 0,
-        duration: 0.6,
-        delay: 0.6
-    });
+        var cont3={val3:0} , NewVal3 = 3 ;
+        let contador3 = TweenLite.to(cont3,2,{
+            val3:NewVal3,
+            roundProps:"val3",
+            onUpdate:function(){
+                document.getElementById("contador3").innerHTML=cont3.val3 + "%"
+            },
+            delay: 0.6
+        });
+        st3 = ScrollTrigger.create({
+            trigger: ".icon-text",
+            animation: contador3
+        });
 
-    gsap.from(".grafico-1 svg", {
-        scrollTrigger: ".grafico-1",
-        opacity: 0,
-        y: 100,
-        duration: 0.6
-    });
-    gsap.from(".cls-14, .cls-15", {
-        scrollTrigger: ".grafico-1",
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.2
-    }).delay(0.4);
-    gsap.from(".cls-12, .cls-13", {
-        scrollTrigger: ".grafico-1",
-        opacity: 0,
-        scaleX: 0.75,
-        duration: 0.6,
-        stagger: 0.6
-    }).delay(0.4);
+        gsap.from(".grafico-4 svg g > g, .grafico-4 svg g > path", {
+            scrollTrigger: ".grafico-4",
+            opacity: 0,
+            scale: 0.5,
+            transformOrigin: "center center",
+            stagger: 0.05,
+            duration: 0.6
+        });
 
-    gsap.from(".grafico-2 svg g > g, .grafico-2 svg g > path", {
-        scrollTrigger: ".grafico-2",
-        opacity: 0,
-        scale: 0.5,
-        transformOrigin: "center center",
-        stagger: 0.1,
-        duration: 0.6
-    });
-    gsap.from(".grafico-3 svg g > g, .grafico-3 svg g > image", {
-        scrollTrigger: ".grafico-3",
-        opacity: 0,
-        scale: 0.5,
-        transformOrigin: "center center",
-        stagger: 0.1,
-        duration: 0.6
-    });
+        gsap.from("#partnerships .image img", {
+            scrollTrigger: "#partnerships .image",
+            opacity: 0,
+            scale: 1.5,
+            y: 100,
+            duration: 1,
+            ease: "power2.inOut",
+        });
+        gsap.from("#partnerships .detalhe-wave-1, #partnerships .detalhe-wave-2", {
+            scrollTrigger: "#partnerships .image",
+            opacity: 0,
+            y: -50,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power2.inOut",
+        });
+        gsap.from(".circle, .circle h3, .circle h4, .circle i", {
+            scrollTrigger: ".circle",
+            scale: 0.5,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.1,
+            ease: "power2.inOut",
+        });
 
-    gsap.from(".icon-text > div", {
-        scrollTrigger: ".icon-text",
-        opacity: 0,
-        scale: 0.5,
-        transformOrigin: "center center",
-        stagger: 0.2,
-        duration: 0.6
-    });
-    
-    var cont1={val:0} , NewVal = 59 ;
-    let contador1 = TweenLite.to(cont1,3,{
-        val:NewVal,
-        roundProps:"val",
-        onUpdate:function(){
-            document.getElementById("contador1").innerHTML=cont1.val + "%"
-        }
-    });
-    st1 = ScrollTrigger.create({
-        trigger: ".icon-text",
-        animation: contador1
-    });
-
-    var cont2={val2:0} , NewVal2 = 38 ;
-    let contador2 = TweenLite.to(cont2,3,{
-        val2:NewVal2,
-        roundProps:"val2",
-        onUpdate:function(){
-            document.getElementById("contador2").innerHTML=cont2.val2 + "%"
-        },
-        delay: 0.3
-    });
-    st2 = ScrollTrigger.create({
-        trigger: ".icon-text",
-        animation: contador2
-    });
-
-    var cont3={val3:0} , NewVal3 = 3 ;
-    let contador3 = TweenLite.to(cont3,2,{
-        val3:NewVal3,
-        roundProps:"val3",
-        onUpdate:function(){
-            document.getElementById("contador3").innerHTML=cont3.val3 + "%"
-        },
-        delay: 0.6
-    });
-    st3 = ScrollTrigger.create({
-        trigger: ".icon-text",
-        animation: contador3
-    });
-
-    gsap.from(".grafico-4 svg g > g, .grafico-4 svg g > path", {
-        scrollTrigger: ".grafico-4",
-        opacity: 0,
-        scale: 0.5,
-        transformOrigin: "center center",
-        stagger: 0.05,
-        duration: 0.6
-    });
-
-    gsap.from("#partnerships .image img", {
-        scrollTrigger: "#partnerships .image",
-        opacity: 0,
-        scale: 1.5,
-        y: 100,
-        duration: 1,
-        ease: "power2.inOut",
-    });
-    gsap.from("#partnerships .detalhe-wave-1, #partnerships .detalhe-wave-2", {
-        scrollTrigger: "#partnerships .image",
-        opacity: 0,
-        y: -50,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power2.inOut",
-    });
-    gsap.from(".circle, .circle h3, .circle h4, .circle i", {
-        scrollTrigger: ".circle",
-        scale: 0.5,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "power2.inOut",
-    });
-
-    gsap.from(".grafico-5 svg > g > path", {
-        scrollTrigger: ".grafico-5",
-        scaleX: 0,
-        stagger: 0.2,
-        duration: 1,
-        ease: "power1.inOut"
-    });
-
-    gsap.from(".grafico-5 svg > g > g", {
-        scrollTrigger: ".grafico-5",
-        scale: 0.5,
-        opacity: 0,
-        stagger: 0.3,
-        duration: 0.6,
-        ease: "power1.inOut"
-    });
-
-
-    /*gsap.utils.toArray(".grafico-5 svg > g > path").forEach(element => {
-        var tempo = element;
-        gsap.from(element, {
+        gsap.from(".grafico-5 svg > g > path", {
             scrollTrigger: ".grafico-5",
             scaleX: 0,
+            stagger: 0.2,
             duration: 1,
-            ease: "power1.inOut",
-            onComplete:function(){
-                console.log(tempo)
-            }
+            ease: "power1.inOut"
         });
-    });*/
+
+        gsap.from(".grafico-5 svg > g > g", {
+            scrollTrigger: ".grafico-5",
+            scale: 0.5,
+            opacity: 0,
+            stagger: 0.3,
+            duration: 0.6,
+            ease: "power1.inOut"
+        });
+
+
+        /*gsap.utils.toArray(".grafico-5 svg > g > path").forEach(element => {
+            var tempo = element;
+            gsap.from(element, {
+                scrollTrigger: ".grafico-5",
+                scaleX: 0,
+                duration: 1,
+                ease: "power1.inOut",
+                onComplete:function(){
+                    console.log(tempo)
+                }
+            });
+        });*/
+    });
 }
 </script>
