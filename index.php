@@ -7,8 +7,8 @@ include('header.php');
 ?>
         <section class="hero">
             <div class="bg">
-                <video poster="assets/images/home-hero-bg.jpg" preload="auto" autoplay loop muted playsinline>
-                    <source src="assets/images/home-hero-bg.mp4" type="video/mp4">
+                <video poster="assets/images/home-hero-bg-new.jpg" preload="auto" autoplay loop muted playsinline>
+                    <source src="assets/images/home-hero-bg-new.mp4" type="video/mp4">
                     Sorry, your browser does not support HTML5 video.
                 </video>
             </div>

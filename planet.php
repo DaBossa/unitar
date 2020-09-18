@@ -9,7 +9,7 @@ include('header.php');
         <section class="hero-pilar bg-<?php echo $page_class ?>">
             <div class="hero-pilar-image">
                 <div class="hero-icon-text">
-                    <h1 class="bg-<?php echo $page_class ?>"><?php echo $titulo ?>
+                    <h1 class="bg-<?php echo $page_class ?>"><a href="https://www.unitar.org/sustainable-development-goals/planet" target="_blank"><?php echo $titulo ?></a>
                         <i><?php include('assets/images/pillar-hero-icon-'.$page_class.'.svg'); ?></i>
                     </h1>
                 </div>
@@ -99,7 +99,7 @@ include('header.php');
                                 </li>
                                 <li class="data-events-days" data-info="945">
                                     <h4>945</h4>
-                                    <h5>Events days</h5>
+                                    <h5>Event days</h5>
                                 </li>
                                 <li class="data-beneficiaries" data-info="71984">
                                     <h4>71,984</h4>
@@ -116,7 +116,7 @@ include('header.php');
                                 </li>
                                 <li class="data-learners" data-info="69240">
                                     <h4>69,240</h4>
-                                    <h5>Number of learners</h5>
+                                    <h5>Learners</h5>
                                 </li>
                                 <li class="data-certificates" data-info="31770">
                                     <h4>31,770</h4>

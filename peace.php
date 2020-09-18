@@ -9,7 +9,7 @@ include('header.php');
         <section class="hero-pilar bg-<?php echo $page_class ?>">
             <div class="hero-pilar-image">
                 <div class="hero-icon-text">
-                    <h1 class="bg-<?php echo $page_class ?>"><?php echo $titulo ?>
+                    <h1 class="bg-<?php echo $page_class ?>"><a href="https://www.unitar.org/sustainable-development-goals/peace" target="_blank"><?php echo $titulo ?></a>
                         <i><?php include('assets/images/pillar-hero-icon-'.$page_class.'.svg'); ?></i>
                     </h1>
                 </div>
@@ -79,7 +79,7 @@ include('header.php');
                         <img src="assets/images/pilar-icon-17@2x.png" alt="">
                     </div>
                     <div class="activity-text col-lg-7 col-xl-4 p-0 m-2 m-md-4">
-                        <p>Peace Pillar programming was primarily aligned with ten of the SDGs, with many teams working in a cross-cutting capacity supporting multiple goals and targets.</p>
+                        <p>Peace Pillar programming was primarily aligned with five of the SDGs, with many teams working in a cross-cutting capacity supporting multiple goals and targets.</p>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@ include('header.php');
                                 </li>
                                 <li class="data-events-days" data-info="1970">
                                     <h4>1,970</h4>
-                                    <h5>Events days</h5>
+                                    <h5>Event days</h5>
                                 </li>
                                 <li class="data-beneficiaries" data-info="14488">
                                     <h4>14,488</h4>
@@ -115,7 +115,7 @@ include('header.php');
                                 </li>
                                 <li class="data-learners" data-info="13741">
                                     <h4>13,741</h4>
-                                    <h5>Number of learners</h5>
+                                    <h5>Learners</h5>
                                 </li>
                                 <li class="data-certificates" data-info="2603">
                                     <h4>2,603</h4>
@@ -161,7 +161,7 @@ include('header.php');
                 <div class="row flex-column align-items-center no-gutters">
                     <div class="col-xl-8 anima-type1 mb-5 pb-5">
                         <div class="content">
-                            <p>High-level engagement with Member States, regional organizations and other United Nations agencies was strengthened through the planning and facilitation of two high-level events. The first event the Seminar for Special and Personal Representatives and Envoys of the UN Secretary-General is now in its 16th year. The second event, the International Conference on Peace and Investments in the Democratic Republic of the Congo and the Great Lakes Region, brought together diverse technical and financial partners to present recent security improvements in the region as well as to showcase new investment opportunities.</p>
+                            <p>High-level engagement with Member States, regional organizations and other United Nations agencies was strengthened through the planning and facilitation of two high-level events. The first event the Seminar for Special and Personal Representatives and Envoys of the UN Secretary-General is now in its 16th year. The second event, the <a href="https://www.unitar.org/drc-and-great-lakes-region-when-peace-and-development-go-hand-hand" target="_blank">International Conference on Peace and Investments in the Democratic Republic of the Congo and the Great Lakes Region</a>, brought together diverse technical and financial partners to present recent security improvements in the region as well as to showcase new investment opportunities.</p>
                         </div>
                     </div>
                 </div>
@@ -179,10 +179,17 @@ include('header.php');
                         </div>
                     </div>
                     <div class="highlights-item highlights-item-image">
-                        <img src="assets/images/pilar-peace-img-hl-01.jpg" alt="">
-                        <div class="content bg-white">
+                        <div class="main-carousel">
+                            <div class="carousel-cell"><img src="assets/images/pilar-peace-img-hl-01.jpg" alt=""><div class="content bg-white">
                             <p><strong>Indigenous representatives from around the world deepen knowled ge and strengthen skills in conflict prevention and peacemaking.</strong></p>
+                        </div></div>
+                            <div class="carousel-cell"><img src="assets/images/pilar-peace-img-hl-02.jpg" alt=""></div>
+                            <div class="carousel-cell"><img src="assets/images/pilar-peace-img-hl-03.jpg" alt=""></div>
+                            <div class="carousel-cell"><img src="assets/images/pilar-peace-img-hl-04.jpg" alt=""></div>
+                            <div class="carousel-cell"><img src="assets/images/pilar-peace-img-hl-05.jpg" alt=""></div>
+                            <div class="carousel-cell"><img src="assets/images/pilar-peace-img-hl-06.jpg" alt=""></div>
                         </div>
+
                         <div class="detalhe-wave">
                             <?php include('assets/images/section-wave-4.svg'); ?>
                         </div>
@@ -190,13 +197,13 @@ include('header.php');
                     <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
-                            <p><strong>Trained 6,123 soldiers</strong> from 8 African Troop Contributing Countries prior to their deployment to UN peace operations in collaboration with the Global Peace Operations Initiative (GPOI). In addition, in collaboration with UNDP, <strong>28 civilians from the League of Arab States (LAS)</strong> specialized Task Force were trained in preparation for their eventual deployment to joint peace operations in the MENA region. Finally, <strong>23 correction personnel</strong> were trained as part of the institutional capacity-building support for the security sector.</p>
+                            <p><strong>Trained 6,123 soldiers</strong> from 8 African Troop Contributing Countries prior to their deployment to UN peace operations in collaboration with the Global Peace Operations Initiative (GPOI). In addition, in collaboration with <a href="https://unitar.org/strengthening-crisis-response-capacities-league-arab-states-training-tests-and-expands-ones-limits" target="_blank">UNDP, 28 civilians from the League of Arab States (LAS)</a> specialized Task Force were trained in preparation for their eventual deployment to joint peace operations in the MENA region. Finally, <strong>23 correction personnel</strong> were trained as part of the institutional capacity-building support for the security sector. <a href="https://www.youtube.com/watch?v=wp1FzFzcVCk" target="_blank">Watch video</a>.</p>
                         </div>
                     </div>
                     <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-04.svg" alt="">
                         <div class="content">
-                            <p><a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/pre-deployment-support-military-police-corrections-and-civilians" target="_blank">Trained 78 Formed Police Units (FPUs) trainers</a>, including 12 female trainers from West Africa, in collaboration with the Ecole de Maintien de la Paix “Alioune Blondin Beye” (EMP). In addition, <strong>254 members of FPUs</strong> were trained prior to their deployment to the United Nations Multidimensional Integrated Stabilization Mission in Mali (MINUSMA), as well as <strong>25 Individual Police Officers (IPOs)</strong>.</p>
+                            <p><a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/pre-deployment-support-military-police-corrections-and-civilians" target="_blank">Trained 78 Formed Police Units (FPUs) trainers</a>, including 12 female trainers from West Africa, in collaboration with the Ecole de Maintien de la Paix “Alioune Blondin Beye” (EMP). In addition, <strong>254 members of FPUs</strong> were trained prior to their deployment to the United Nations Multidimensional Integrated Stabilization Mission in Mali (MINUSMA), as well as <strong>25 Individual Police Officers (IPOs)</strong>.<br><a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/pre-deployment-support-military-police-corrections-and-civilians" target="_blank">Learn more</a>. <a href="https://www.youtube.com/watch?v=3CnChV6lwno" target="_blank">Watch video</a>.</p>
                         </div>
                     </div>
                     <div class="col-xl-6 highlights-item">
@@ -220,13 +227,13 @@ include('header.php');
                     <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-08.svg" alt="">
                         <div class="content">
-                            <p>Contributed to <strong>expanding the knowledge</strong> and understanding of <strong>5,965 adult learners</strong>, including <strong>646 UN volunteers</strong>, on key concepts related to <strong>conflict and postconflict theory and practice through online learning</strong>.</p>
+                            <p>Contributed to <a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/online-learning-and-education" target="_blank">expanding the knowledge</a> and understanding of <strong>5,965 adult learners</strong>, including <strong>646 UN volunteers</strong>, on key concepts related to <strong>conflict and postconflict theory and practice through online learning</strong>.</p>
                         </div>
                     </div>
                     <div class="col-xl-9 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-09.svg" alt="">
                         <div class="content">
-                            <p>Built the knowledge and capacities of <strong>22 junior DDR practitioners</strong> (in partnership with the Folke Bernadotte Academy (FBA)) through the delivery of an <strong>online course on the UN approach to <a href="https://www.unitar.org/about/news-stories/news/unitar-co-hosted-first-humanitarian-energy-conference">Disarmament, Demobilization and Reintegration (DDR)</a></strong>, as well as the capacities of 17 DDR practitioners (in partnership with UN DPO and UNODA) to design effective, <strong>tailored arms and ammunition management</strong> operations – in both traditional and ‘second generation’ DDR settings – in line with the most relevant, globally accepted standards (IDDRS, ISACS and IATG) and with international and regional commitments of host governments.</p>
+                            <p>Built the knowledge and capacities of <strong>22 junior DDR practitioners</strong> (in partnership with the Folke Bernadotte Academy (FBA)) through the delivery of an <strong>online course on the UN approach to <a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/disarmament-demobilization-and-reintegration" target="blank">Disarmament, Demobilization and Reintegration (DDR)</a></strong>, as well as the capacities of 17 DDR practitioners (in partnership with UN DPO and UNODA) to design effective, <strong>tailored arms and ammunition management</strong> operations – in both traditional and ‘second generation’ DDR settings – in line with the most relevant, globally accepted standards (IDDRS, ISACS and IATG) and with international and regional commitments of host governments.</p>
                         </div>
                     </div>
                     <div class="col-xl-8 highlights-item">
@@ -294,4 +301,16 @@ include('header.php');
         </section>
 
 <?php include('footer.php'); ?>
+<link rel="stylesheet" href="/assets/css/flickity.min.css">
+<script src="/assets/js/flickity.pkgd.min.js"></script>
+<script>
+    $(window).on("load", function() {
+        $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        adaptiveHeight: true
+        });
+    });
+</script>
 <?php include('inc/scripts-pilar.html'); ?>

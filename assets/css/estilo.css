@@ -802,6 +802,7 @@ body.pilar.goto-color .btn-gotop span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  z-index: 9;
 }
 .hero-icon-text h1 {
   position: relative;
@@ -815,6 +816,9 @@ body.pilar.goto-color .btn-gotop span {
   border-radius: 0 99px 99px 0;
   padding: 0.2em 1em 0.25em 1.5em;
   text-align: right;
+}
+.hero-icon-text h1 a {
+  color: #fff;
 }
 .hero-pilar-image h1 i svg {
   position: absolute;
@@ -932,9 +936,6 @@ body.pilar.goto-color .btn-gotop span {
   }
   .pilar-infos {
     padding-top: 14vw;
-  }
-  .hero-pilar-detalhe-2 {
-    top: -6vw;
   }
   .hero-pilar-image {
     height: calc(100vh - 114px);
@@ -1188,9 +1189,16 @@ body.pilar.goto-color .btn-gotop span {
   margin-top: 2em;
 }
 .highlights-item-image img {
-  margin: 0;
+  margin: 0!important;
   width: 100% !important;
   max-width: 100% !important;
+}
+.highlights-item-image .main-carousel,
+.highlights-item-image .main-carousel .carousel-cell {
+  width: 100%;
+}
+.flickity-viewport {
+  transition: height 0.3s;
 }
 .highlights-item-image .detalhe-wave {
   position: absolute;
@@ -1240,6 +1248,9 @@ body.pilar.goto-color .btn-gotop span {
 @media (min-width: 992px) {
   .highlights-item img {
     max-width: 210px;
+  }
+  .highlights-item-image {
+    min-height: 800px;
   }
   .info-numbers .inner .content {
     padding: 60px 40px;

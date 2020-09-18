@@ -92,7 +92,7 @@ include('header.php');
                                 </li>
                                 <li class="data-events-days" data-info="75">
                                     <h4>75</h4>
-                                    <h5>Events days</h5>
+                                    <h5>Event days</h5>
                                 </li>
                                 <li class="data-beneficiaries" data-info="3475">
                                     <h4>3,475</h4>
@@ -109,7 +109,7 @@ include('header.php');
                                 </li>
                                 <li class="data-learners" data-info="3129">
                                     <h4>3,129</h4>
-                                    <h5>Number of learners</h5>
+                                    <h5>Learners</h5>
                                 </li>
                                 <li class="data-certificates" data-info="567">
                                     <h4>567</h4>
