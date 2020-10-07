@@ -154,7 +154,7 @@ include('header.php');
                     <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-01.svg" alt="">
                         <div class="content">
-                            <p>Developed climate change related knowledge and skills of over <strong>30,000 stakeholders</strong> through the UNITARmanaged UN CC:e-Learn platform, which has more <strong>than 230,000 registrations and 21 courses in 8 languages</strong>.</p>
+                            <p>Developed climate change related knowledge and skills of over <strong>30,000 stakeholders</strong> through the UNITAR managed <a href="https://unccelearn.org/" target="_blank">UN CC:e-Learn platform</a>, which has more <strong>than 230,000 registrations and 21 courses in 8 languages</strong>.</p>
                         </div>
                     </div>
                     <div class="col-xl-6 highlights-item">

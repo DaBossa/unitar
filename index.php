@@ -76,7 +76,7 @@ include('header.php');
                     </div>
                     <div class="w-100 pt-lg-5 pb-md-5 mb-5"></div>
                     <div class="col-md-8 col-lg-6 mx-auto">
-                        <p class="anima-type1">The majority of our beneficiaries were associated with programming related to the advancement of environmental sustainability and green development and people and social inclusion.</p>
+                        <p class="anima-type1">The majority of our beneficiaries were associated with programming related to the advancement of environmental sustainability and green development, and people and social inclusion.</p>
                     </div>
                 </div>
             </div>

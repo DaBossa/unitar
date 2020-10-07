@@ -1208,6 +1208,8 @@ body.pilar.goto-color .btn-gotop span {
 }
 .highlights-item img {
   margin-bottom: 15px;
+  width: 100%;
+  height: auto;
   max-width: 120px;
 }
 .highlights-item:nth-of-type(2n) img {
@@ -1346,29 +1348,32 @@ body.pilar.goto-color .btn-gotop span {
 .bg-ncd svg {
   fill: #379F44 !important;
 }
-.bg-people p strong, .bg-people .btn-icon:hover span, .bg-people .image-desc.bg-light {
+.bg-people p a, .bg-people p strong, .bg-people .btn-icon:hover span, .bg-people .image-desc.bg-light {
   color: #7771B1;
 }
-.bg-unosat p strong, .bg-unosat .btn-icon:hover span, .bg-unosat .image-desc.bg-light {
+.bg-unosat p a, .bg-unosat p strong, .bg-unosat .btn-icon:hover span, .bg-unosat .image-desc.bg-light {
   color: #D53216;
 }
-.bg-agenda p strong, .bg-agenda .btn-icon:hover span, .bg-agenda .image-desc.bg-light {
+.bg-agenda p a, .bg-agenda p strong, .bg-agenda .btn-icon:hover span, .bg-agenda .image-desc.bg-light {
   color: #313D5E;
 }
-.bg-peace p strong, .bg-peace .btn-icon:hover span, .bg-peace .image-desc.bg-light {
+.bg-peace p a, .bg-peace p strong, .bg-peace .btn-icon:hover span, .bg-peace .image-desc.bg-light {
   color: #63C3EF;
 }
-.bg-planet p strong, .bg-planet .btn-icon:hover span, .bg-planet .image-desc.bg-light {
+.bg-planet p a, .bg-planet p strong, .bg-planet .btn-icon:hover span, .bg-planet .image-desc.bg-light {
   color: #219E44;
 }
-.bg-prosperity p strong, .bg-prosperity .btn-icon:hover span, .bg-prosperity .image-desc.bg-light {
+.bg-prosperity p a, .bg-prosperity p strong, .bg-prosperity .btn-icon:hover span, .bg-prosperity .image-desc.bg-light {
   color: #F09300;
 }
-.bg-multilateral-diplomacy p strong, .bg-multilateral-diplomacy .btn-icon:hover span, .bg-multilateral-diplomacy .image-desc.bg-light {
+.bg-multilateral-diplomacy p a, .bg-multilateral-diplomacy p strong, .bg-multilateral-diplomacy .btn-icon:hover span, .bg-multilateral-diplomacy .image-desc.bg-light {
   color: #B81370;
 }
-.bg-ncd p strong, .bg-ncd .btn-icon:hover span, .bg-ncd .image-desc.bg-light {
+.bg-ncd p a, .bg-ncd p strong, .bg-ncd .btn-icon:hover span, .bg-ncd .image-desc.bg-light {
   color: #379F44;
+}
+.pilar p a:hover {
+  color: #292623;
 }
 .btn-people i, .btn-people span {
   background-color: #7771B1 !important;

@@ -144,7 +144,7 @@ include('header.php');
                     <div class="col-xl-7 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-01.svg" alt="">
                         <div class="content">
-                            <p>Strengthened knowledge and skills on <strong>multilateral diplomacy and international law</strong> of <strong>1,689 beneficiaries</strong>, including <strong>diplomats, public officials, participants from the private sector, civil society</strong> and individuals in Geneva, Vienna, Nairobi, Bangkok and New York as well as online, as part of the Institute’s <strong>Core Diplomatic Training Activities</strong>.</p>
+                            <p>Strengthened knowledge and skills on <strong>multilateral diplomacy and international law</strong> of <strong>1,689 beneficiaries</strong>, including <strong>diplomats, public officials, participants from the private sector, civil society</strong> and individuals in Geneva, Vienna, Nairobi, Bangkok and New York as well as online, as part of the Institute’s <a href="https://unitar.org/cdt" target="_blank">Core Diplomatic Training Activities</a>.</p>
                         </div>
                     </div>
                     <div class="col-xl-8 highlights-item">

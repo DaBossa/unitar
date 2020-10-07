@@ -209,7 +209,7 @@ include('header.php');
                     <div class="col-xl-6 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-05.svg" alt="">
                         <div class="content">
-                            <p><a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/gender-equality-and-womens-empowerment/custodians-peace-empowering-femwise-africa-members-ambassadors-peace-and-security">Strengthened the partnership with the Network of African Women in Conflict Prevention and Mediation (FemWise-Africa)</a>. Delivered a five-day induction training for <strong>35</strong> newly accredited members of the network.</p>
+                            <p><a href="https://www.unitar.org/sustainable-development-goals/peace/our-portfolio/gender-equality-and-womens-empowerment/custodians-peace-empowering-femwise-africa-members-ambassadors-peace-and-security" target="_blank">Strengthened the partnership with the Network of African Women in Conflict Prevention and Mediation (FemWise-Africa)</a>. Delivered a five-day induction training for <strong>35</strong> newly accredited members of the network.</p>
                         </div>
                     </div>
                     <div class="col-xl-8 highlights-item">

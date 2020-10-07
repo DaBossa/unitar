@@ -10,7 +10,7 @@ include('header.php');
         <section class="hero-pilar bg-<?php echo $page_class ?>">
             <div class="hero-pilar-image">
                 <div class="hero-icon-text">
-                    <h1 class="bg-<?php echo $page_class ?>"><?php echo $titulo ?>
+                    <h1 class="bg-<?php echo $page_class ?>"><a href="https://unitar.org/sustainable-development-goals/accelerating-sdg-implementation" target="_blank"><?php echo $titulo ?></a>
                         <i><?php include('assets/images/pillar-hero-icon-'.$page_class.'.svg'); ?></i>
                     </h1>
                 </div>
@@ -159,7 +159,7 @@ include('header.php');
                     <div class="col-xl-9 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
-                            <p>Launched the <strong>UNSDG:Learn</strong>, a new initiative, developed in partnership with the UN System Staff College and <strong>joined by more than 50 UN and non-UN partners</strong>, which provides a <strong>smart, online gateway to the wealth of learning offerings – courses and microlearning</strong> – to its users. The objective of the initiative is to reach millions of learners and enable them to identify learning most suited to their needs. Over the first 6 months of its existence the Platform has provided access to <strong>more than 220 products</strong>, including <strong>23 gender related</strong>, and attracted more than <strong>5’000 users from more than 170 countries</strong>.</p>
+                            <p>Launched the <a href="https://www.unsdglearn.org/" target="_blank">UNSDG:Learn</a>, a new initiative, developed in partnership with the UN System Staff College and <strong>joined by more than 50 UN and non-UN partners</strong>, which provides a <strong>smart, online gateway to the wealth of learning offerings – courses and microlearning</strong> – to its users. The objective of the initiative is to reach millions of learners and enable them to identify learning most suited to their needs. Over the first 6 months of its existence the Platform has provided access to <strong>more than 220 products</strong>, including <strong>23 gender related</strong>, and attracted more than <strong>5’000 users from more than 170 countries</strong>.</p>
                         </div>
                     </div>
                     <div class="col-xl-8 highlights-item">

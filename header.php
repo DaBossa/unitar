@@ -103,7 +103,7 @@
                                     <li><a class="nav-link" href="/multilateral-diplomacy">Multilateral Diplomacy</a></li>
                                     <li><a class="nav-link" href="/2030-agenda">2030 Agenda</a></li>
                                     <li><a class="nav-link" href="/unosat">UNOSAT</a></li>
-                                    <li><a class="nav-link" href="/ncd">NCD</a></li>
+                                    <li><a class="nav-link" href="/ncd">The Defeat-NCD Partnership</a></li>
                                 </ul>
                             </li>
                         </ul>
