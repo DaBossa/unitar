@@ -64,7 +64,7 @@ include('header.php');
                     <div class="anima-type1 col-11 col-md-9 col-lg-7 mx-auto">
                         <p>Our core mission focuses on <strong>assisting approximately 90 low-resource countries</strong> and our efforts are aimed specifically at <strong>Sustainable Development Goal 3.4</strong>, to attain the <strong>reduction by one-third of premature mortality from non-communicable diseases through prevention and treatment</strong>.</p>
                         <p>The 60th Session of the UNITAR Board of Trustees endorsed the hosting arrangements and integration of The Defeat-NCD Partnership as a Division within UNITAR.</p>
-                        <p>NCDs require a specific approach because they are lifelong conditions withprofound personal, family, community, local, and national impacts. These are driven by the <strong>complex interplay of underlying environmental factors including climate change, lifestyle including nutrition and exercise, and genetic risk factors, as well as wider externalities such as political, economic, and social trends and choices</strong>.</p>
+                        <p>NCDs require a specific approach because they are lifelong conditions with profound personal, family, community, local, and national impacts. These are driven by the <strong>complex interplay of underlying environmental factors including climate change, lifestyle including nutrition and exercise, and genetic risk factors, as well as wider externalities such as political, economic, and social trends and choices</strong>.</p>
                     </div>
                 </div>
             </div>
@@ -94,13 +94,13 @@ include('header.php');
                     <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-02.svg" alt="">
                         <div class="content">
-                            <p><strong>Stablished the operating model of locating The Defeat-NCD Partnership country experts within Ministries of Health</strong> - and Myanmar and Rwanda were prioritised for 2020 programmatic support. Learning from experience in these two countries will inform the <strong>scaling of our work to an additional five to ten countries in 2020-2021</strong>, in line with the planned roll-out across 90 low-resource countries during the course of this decade.</p>
+                            <p><strong>Established the operating model of locating The Defeat-NCD Partnership country experts within Ministries of Health</strong> - and Myanmar and Rwanda were prioritised for 2020 programmatic support. Learning from experience in these two countries will inform the <strong>scaling of our work to an additional five to ten countries in 2020-2021</strong>, in line with the planned roll-out across 90 low-resource countries during the course of this decade.</p>
                         </div>
                     </div>
                     <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-03.svg" alt="">
                         <div class="content">
-                            <p><strong>Participated in several high-level stakeholder events and consultations in 2019</strong>, including 74th Session of the United Nations General Assembly in New, World Economic Forum, World Health Assembly in Geneva, Prince Mahidol Award Conference in Bangkok, WHO Global Meeting to Accelerate Progress on SDG target 3.4 on NCDs and Mental Health in Muscat.</p>
+                            <p><strong>Participated in several high-level stakeholder events and consultations in 2019</strong>, including 74th Session of the United Nations General Assembly in New York, World Economic Forum, World Health Assembly in Geneva, Prince Mahidol Award Conference in Bangkok, WHO Global Meeting to Accelerate Progress on SDG target 3.4 on NCDs and Mental Health in Muscat.</p>
                         </div>
                     </div>
                 </div>

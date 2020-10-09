@@ -215,7 +215,7 @@ include('header.php');
                     <div class="col-xl-8 highlights-item">
                         <img src="assets/images/pilar-<?php echo $page_class ?>-icon-hl-06.svg" alt="">
                         <div class="content">
-                            <p>Strengthened knowledge and skills of <strong>271 teachers, educators, psychologists, social workers, and <a href="https://www.unitar.org/youth-led-peace-and-reconciliation-colombia-transformational-approach-0" target="_blank">young people involved in the reconciliation process in Colombia</a></strong>, leading to multiplication across communities and reaching many more families, students, children and youth on implementation of strategies that foster resilience and conflict prevention capacities in local communities.</p>
+                            <p>Strengthened knowledge and skills of <strong>271 teachers, educators, psychologists, social workers, and <a href="https://www.unitar.org/youth-led-peace-and-reconciliation-colombia-transformational-approach" target="_blank">young people involved in the reconciliation process in Colombia</a></strong>, leading to multiplication across communities and reaching many more families, students, children and youth on implementation of strategies that foster resilience and conflict prevention capacities in local communities.</p>
                         </div>
                     </div>
                     <div class="col-xl-6 highlights-item">
